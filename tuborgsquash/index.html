@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuborg Squash</title>
+
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/60cddcb918.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navlaptop">
+            <a href="#">Konkurrence</a>
+            <a href="#">Varianter</a>
+
+            <img src="images/logo.png" alt="tuborg-squash-logo">
+
+            <a href="#">Historien</a>
+            <a href="#">Deltag</a>
+        </nav>
+
+        <nav class="navmobil"><i class="fa-solid fa-bars"></i></nav>
+
+    </header>
+
+    <main>
+        <div class="konkurrence">
+            <img src="images/poof.png" alt="eksplosion">
+            <div>
+                <h2>Deltag og vind!</h2>
+                <!--TODO:-->
+                <p>Noget om konkurrencen</p>
+            </div>
+        </div>
+
+        <div class="k-regler">
+            <h2>Sæt dit præg på Tuborg Squash</h2>
+            <img src="images/inspi3.png" alt="Inspiration">
+            <div>
+                <!--TODO:-->
+                <p>Konkurrenceregler og inspiration</p>
+                <button><a href="#">Deltag</a></button>
+            </div>
+        </div>
+
+        <div class="varianter">
+            <h2>Squash til enhver smag</h2>
+
+            <div>
+                <img src="images/almsquash.png" alt="Tuborg Squash">
+                <h3>Smagfuld Squash</h3>
+                <!--TODO:-->
+                <p>Beskrivelse af smagen</p>
+                <button><a href="#">Læs mere</a></button>
+            </div>
+
+            <div>
+                <img src="images/lightsquash.png" alt="Tuborg Squash Light">
+                <h3>Lovende Light</h3>
+                <!--TODO:-->
+                <p>Beskrivelse af smagen</p>
+                <button><a href="#">Læs mere</a></button>
+            </div>
+        </div>
+
+        <div class="historien">
+            <h2>Forfriskende nostalgisk</h2>
+            <img src="images/historien.png" alt="Tuborg Squash og appelsiner">
+            <h3>Frisk & Frugtig</h3>
+            <!--TODO:-->
+            <p>Noget om deres historie, hvordan de startede op etc.</p>
+        </div>
+
+        <div class="deltag">
+            <h2>Indsend din illustration her</h2>
+            <p>Her skal der stå noget om hvordan de skal sende billedet og de kan skrive noget om hvad de har lavet</p>
+
+            <div class="container">
+                <form action="#">
+                    <div class="formular">
+                        <!--NAVN-->
+                        <input type="text" id="navn" name="firstname" placeholder="Dit navn...*" required>
+
+                        <!--EMAIL-->
+                        <input type="text" id="email" name="email" placeholder="Din e-mail...*" required>
+
+                        <!--BY-->
+                        <!--TODO:<select name="by" id="by" required>
+                            <option value="Aarhus">Aarhus</option>
+                            <option value="Aalborg">Aalborg</option>
+                            <option value="København">København</option>
+                            <option value="Odense">Odense</option>
+                            </select>-->
+
+                        <!--BESKED-->
+                        <textarea name="subject" id="besked" cols="30" rows="10"
+                            placeholder="Fortæl os lidt om din illustration..."></textarea>
+
+                        <!--UPLOAD-->
+                        <input type="file" id="file" name="filename" required>
+                    </div>
+
+                    <!--CHECKBOX-->
+                    <div class="checkboxes">
+                        <input type="checkbox" id="regler" name="regler" value="regler" required>
+                        <label for="regler">Jeg accepterer regler og vilkår for konkurrencen*</label>
+
+                        <input type="checkbox" id="alder" name="alder" value="alder" required>
+                        <label for="alder">Jeg bekræfter, at jeg er over den lovpligtige alder*</label>
+                    </div>
+
+                    <!--SEND KNAP-->
+                    <input type="submit" value="Send">
+
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <h2>Har du spørgsmål?</h2>
+        <p class="tlf">Tlf: +45 12 34 56 78</a></p>
+        <p class="email">E-mail: squash@eaaa.dk</p>
+    </footer>
+
+</body>
+
+</html>
