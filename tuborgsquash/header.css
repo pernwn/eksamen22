@@ -125,7 +125,7 @@ label #navmobil{
 label input:checked + #hamburger-menu ~ #navmobil{
     position:absolute;
     right:-5%;
-    top:400px;
+    top:380px;
 
     opacity:1;
 }
