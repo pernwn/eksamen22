@@ -1,0 +1,257 @@
+/*LAPTOP*/
+@media screen and (min-width:1024px) {
+
+    /*MAIN STYLES*/
+    h2 {
+        font-size: 40pt;
+        font-weight: 600;
+        letter-spacing: 0.3px;
+        margin-bottom: 10px;
+    }
+
+    h3 {
+        font-size: 30pt;
+        font-weight: 400;
+        letter-spacing: 0.3px;
+        margin-bottom: 10px;
+    }
+
+    p,
+    input,
+    label,
+    textarea,
+    a {
+        font-size: 20pt;
+        font-weight: 300;
+        letter-spacing: 0.3px;
+        margin-bottom: 20px;
+    }
+
+    #konkurrence div>a,
+    #k-regler a,
+    #varianter a {
+
+        border-radius: 20px;
+        padding: 8px;
+        padding-right: 30px;
+        padding-left: 30px;
+        margin: 5px;
+
+        font-size: 15pt;
+
+    }
+
+    #konkurrence div>a,
+    #k-regler a,
+    #varianter a {
+        border: 3px solid #3e531c;
+        transition: 0.4s ease-in-out;
+    }
+
+
+    /*KONKURRENCE STYLES*/
+    #konkurrence {
+        height: 600px;
+    }
+
+    #top-pic-mobil {
+        display: none;
+    }
+
+    #top-pic-laptop {
+        display: block;
+    }
+
+
+    .fa-mobil {
+        display: none;
+    }
+
+    .fa-laptop {
+        color: #f5c048;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        position: relative;
+        bottom: 200px;
+
+        border-radius: 50%;
+
+        transition: 0.3s;
+
+        animation: ned 1s ease-out 1;
+
+    }
+
+    @keyframes ned {
+        0% {
+            bottom: 100;
+        }
+
+        100% {
+            bottom: 250;
+        }
+    }
+
+    .fa-laptop:hover {
+        color: #fbcd60;
+        bottom: 170px;
+    }
+
+    .fa-laptop:active {
+        color: #d2a63e;
+    }
+
+
+    /*KONKURRENCE REGLER STYLES*/
+    #k-regler {
+        height: 1450px;
+        bottom: 20px;
+    }
+
+    #k-pic-mobil {
+        display: none;
+    }
+
+    #k-pic-laptop {
+        width: 100%;
+        display: block;
+    }
+
+    #bølge {
+        bottom: 20px;
+    }
+
+    #k-regler div {
+        margin-top: 4%;
+    }
+
+    #k-regler h2 {
+        margin-top: 0;
+        margin-bottom: 8%;
+
+        text-align: center;
+    }
+
+    #k-regler a:hover {
+        background-color: #ea8619;
+        color: #3e531c;
+        border: 3px solid #3e531c;
+    }
+
+    /*VARIANTER STYLES*/
+    #varianter {
+        border-bottom: 4px solid #ea851948;
+        border-radius: 10px;
+        margin-right: 150px;
+        margin-left: 150px;
+    }
+
+    #varianter div {
+        padding-left: 10px;
+        padding-right: 10px;
+        flex-direction: row;
+    }
+
+    #almsquash {
+        margin-left: 50px;
+    }
+
+    #lightsquash {
+        margin-right: 50px;
+    }
+
+    .squash-laptop {
+        order: 1;
+    }
+
+    #almsquash-tekst {
+        order: 2;
+        text-align: center;
+        margin-left:50px;
+    }
+
+    #lightsquash-tekst {
+        text-align: center;
+        margin-right:50px;
+    }
+
+    #varianter img {
+        border-radius: 150px;
+        transform: scale(1);
+        transition: 0.5s ease-in-out;
+    }
+
+    #varianter img:hover {
+        transform: scale(1.1);
+    }
+
+    .squash-laptop {
+        display: block;
+    }
+
+    .squash-mobil {
+        display: none;
+    }
+
+    #varianter>div:nth-child(2) {
+        margin-top: 100px;
+    }
+
+    #varianter>div:nth-child(3) {
+        margin-bottom: 150px;
+    }
+
+    #varianter p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #varianter a:hover {
+        background-color: #f5c048;
+        color: #3e531c;
+        border: 3px solid #3e531c;
+    }
+
+    /*HISTORIE STYLES*/
+    #historien {
+        height: auto;
+        margin-top: 150px;
+    }
+
+    #historietekst{
+        margin-top:50%;
+    }
+
+    #image-holder {
+        display: none;
+    }
+
+    #image-holder-laptop {
+        display: block;
+    }
+
+    #image-holder-laptop {
+        width: 2600px;
+        height: 1200px;
+
+        overflow: hidden;
+    }
+
+    #image-holder-laptop img {
+        width: 100%;
+        height: 100%;
+
+        padding-left: 110px;
+        padding-right: 200px;
+
+        position: relative;
+
+    }
+
+
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {}

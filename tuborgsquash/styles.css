@@ -1,455 +1,506 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-*:before, *:after{
+*:before,
+*:after {
     box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
-    background-color:#f5c048;
-    overflow-x:hidden;
+body {
+    background-color: #f5c048;
+    overflow-x: hidden;
 }
 
-main{
-    position:relative;
-    top:80px;
+main {
+    position: relative;
+    top: 80px;
 }
 
-h2, h3, #navmobil a{
+h2,
+h3,
+#navmobil a {
     font-family: "Merriweather", serif;
 }
 
-p, input, label, textarea, a{
+p,
+input,
+label,
+textarea,
+a {
     font-family: "Kanit", sans-serif;
 }
 
 /*MOBIL TEKST STTYLES*/
-h2{
+h2 {
     font-size: 17pt;
     font-weight: 600;
-    letter-spacing: 0.3px;
-    margin-bottom:10px;
-}
-
-h3{
-    font-size:15pt;
-    font-weight: 400;
-    letter-spacing: 0.3px;
-    margin-bottom:10px;
-}
-
-p, input, label, textarea, a{
-    font-size: 12pt;
-    font-weight: 300;
     letter-spacing: 0.3px;
     margin-bottom: 10px;
 }
 
-#info, #varianter, #historien, footer{
-    color:#ea8619;
+h3 {
+    font-size: 15pt;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    margin-bottom: 10px;
 }
 
-#k-regler, #deltag{
-    color:#f5c048;
+p,
+input,
+label,
+textarea,
+a {
+    font-size: 12pt;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+    margin-bottom: 10px;
+    /*TODO:
+    text-align:center;*/
+}
+
+#info,
+#varianter,
+#historien,
+footer {
+    color: #ea8619;
+}
+
+#k-regler,
+#deltag {
+    color: #f5c048;
 }
 
 
-/*KONKURRENCE STYLES*/ 
-#konkurrence{
+/*KONKURRENCE STYLES*/
+#konkurrence {
     background-color: #ea8619;
-    height:160px;
+    height: 160px;
 }
 
-#konkurrence img{
-    width:100%;
-    position:relative;
+#top-pic-laptop{
+    display:none;
 }
 
-.fa-circle-arrow-down{
-    color:#f5c048;
+#top-pic-mobil, #top-pic-laptop{
+    width: 100%;
+    position: relative;
+}
 
-    display:flex;
+.fa-laptop{
+    display:none;
+}
+
+.fa-mobil {
+    color: #f5c048;
+
+    display: flex;
     align-items: center;
     justify-content: center;
 
-    position:relative;
-    bottom:60px;
+    position: relative;
+    bottom: 60px;
+
 }
 
-.fa-circle-arrow-down:active{
-    color:#d2a63e;
+.fa-mobil:active {
+    color: #d2a63e;
 }
 
-#konkurrence a{
+#konkurrence a {
     text-decoration: none;
 }
 
-#info{
-    position:relative;
-    height:200px;
+#info {
+    position: relative;
+    height: 200px;
 
-    display:flex;
-    flex-direction: column; 
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 /*KONKURRENCE REGLER STYLES*/
-#k-regler{
-    background-color:#ea8619;
+#k-regler {
+    background-color: #ea8619;
     height: 600px;
     width: 100%;
 
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    position:relative;
-    bottom:10px;
+    position: relative;
+    bottom: 10px;
+}
+
+#k-pic-mobil{
+    width:100%;
+}
+
+#k-pic-laptop{
+    display:none;
 }
 
 
-#k-regler a{
-    color:#ea8619;
+#k-regler a {
+    color: #ea8619;
     text-decoration: none;
 }
 
-#k-regler h2{
-    margin-top:10%;
-    margin-bottom:12%;
+#k-regler h2 {
+    margin-top: 10%;
+    margin-bottom: 12%;
 
     text-align: center;
 }
 
-#k-regler div{
+#k-regler div {
     text-align: center;
-    margin-top:7%;
+    margin-top: 7%;
 }
 
-#k-regler div p{
-    margin-bottom:10%;
+#k-regler div p {
+    margin-bottom: 10%;
 }
 
 
-#konkurrence div > a, #k-regler a, #varianter a{
+#konkurrence div>a,
+#k-regler a,
+#varianter a {
     background-color: #3e531c;
-    border:none;
+    border: none;
 
-    border-radius: 12px;
-    padding:8px;
-    padding-right:20px;
-    padding-left:20px;
-    margin:5px;
+    border-radius: 18px;
+    padding: 8px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 5px;
+    font-size: 10pt;
 
-    cursor:pointer;
+    cursor: pointer;
 }
 
-#konkurrence div > a:active, #k-regler a:active, #varianter a:active{
+#konkurrence div>a:active,
+#k-regler a:active,
+#varianter a:active {
     background-color: #334517;
 }
 
 /*VARIANTER STYLES*/
-#varianter{
-    display:flex;
+#varianter {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    border-bottom:solid 2px #ea851948;
-    margin-right:40px;
-    margin-left:40px;
-    margin-top:40px;
+    border-bottom: solid 2px #ea851948;
+    border-radius: 10px;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 40px;
 }
 
-#varianter div{
-    display:flex;
+#varianter div {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-#varianter > div:nth-child(2){
-    margin-top:30px;
-    margin-bottom:40px;
+#varianter>div:nth-child(2) {
+    margin-top: 30px;
+    margin-bottom: 40px;
 }
 
-#varianter div > div{
-    display:flex;
+#varianter div>div {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    margin-top:20px;
+    margin-top: 20px;
 }
 
-#varianter > div:nth-child(3){
-    margin-bottom:50px;
+#varianter>div:nth-child(3) {
+    margin-bottom: 50px;
 }
 
-#varianter img{
+#varianter img {
     border-radius: 60px;
 }
 
-#varianter a{
-    color:#f5c048;
+.squash-laptop{
+    display:none;
+}
+
+#varianter a {
+    color: #f5c048;
     text-decoration: none;
 }
 
-#bølge{
-    position:relative;
-    bottom:10px;
+#varianter p{
+    text-align:center;
+}
+
+#bølge {
+    position: relative;
+    bottom: 10px;
 }
 
 /*HISTORIE STYLES*/
-#historien{
-    display:flex;
+#historien {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    height:450px;
-    width:auto;
+    height: 450px;
+    width: auto;
 
-    margin-top:50px;
+    margin-top: 50px;
 
 }
 
-#historietekst{
-    display:flex;
+#historietekst {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
 
-    margin-right:50px;
-    margin-left:50px;
-    margin-top:50%;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 70%;
 
-    position:absolute;
-    
+    position: absolute;
+
 }
 
-#image-holder{
-    width:100%;
-    height:100%;
-
-    overflow:hidden;
+#image-holder-laptop{
+    display:none;
 }
 
-#image-holder img{
-    width:850px;
-    height:350px;
+#image-holder {
+    width: 850px;
+    height: 350px;
 
-    padding-left:110px;
-    padding-right:110px;
+    overflow: hidden;
+}
 
-    position:relative;
-    right:235px;
+#image-holder img {
+    width: 100%;
+    height: 100%;
+
+    padding-left: 110px;
+    padding-right: 110px;
+
 }
 
 /*DELTAG STYLES*/
-#deltag{
+#deltag {
     background-color: #ea8619;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align:center;
+    text-align: center;
 
-    height:auto;
+    height: auto;
 
     position: relative;
-    bottom:10px;
+    bottom: 10px;
 
-    padding:30px;
+    padding: 30px;
 }
 
-#deltagtekst{
-    margin-bottom:10%;
-    margin-top:10%;
+#deltagtekst {
+    margin-bottom: 10%;
+    margin-top: 10%;
 }
 
-#formular{
+#formular {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-#formular > input, textarea{
-    padding:10px;
-    width:100%;
+#formular>input,
+textarea {
+    padding: 10px;
+    width: 100%;
 
-    border:none;
+    border: solid 2px #ea8619;
     border-radius: 10px;
 
-    color:#ea8619;
+    color: #ea8619;
     background-color: #f5c048;
-
     outline:none;
+
+    transition:0.4s;
 }
 
-/*Input – navn, email, upload, besked*/
-input[type="file"]::file-selector-button{
+#formular > input:focus, textarea:focus{
+    border:solid 2px #c06605;
+   
+}
+
+/*Input – navn, email, upload, besked – https://developer.mozilla.org/en-US/docs/Web/CSS/::file-selector-button */
+input[type="file"]::file-selector-button {
     font-family: "Merriweather", serif;
-    border:1px solid #ea8619;
+    border: 1px solid #ea8619;
     background-color: #f5c048;
     color: #ea8619;
 
     border-radius: 8px;
-    padding:8px;
+    padding: 8px;
 
-    transition:0.2s;
+    transition: 0.2s;
 
-    cursor:pointer;
+    cursor: pointer;
 }
 
-input[type="file"]::file-selector-button:focus{
-    cursor:pointer;
+input[type="file"]::file-selector-button:focus {
+    cursor: pointer;
 
-    color:#f5c048;
+    color: #f5c048;
     background-color: #ea8619;
-    border:1px solid #f5c048;
+    border: 1px solid #f5c048;
 }
 
-/*Checkbox*/ /*Lavet med hjælp fra https://moderncss.dev/pure-css-custom-checkbox-style/*/
-#checkboxes{
-    display:flex;
-    flex-direction: row;
+/*Checkbox*/
+/*Lavet med hjælp fra https://moderncss.dev/pure-css-custom-checkbox-style/*/
+#checkboxes {
+    display: flex;
+    flex-direction: column;
 
     margin-bottom: 30px;
 
-    width:100%;
+    width: 100%;
 }
 
-.cb-container{
-    display:grid;
+.cb-container {
+    display: grid;
     grid-template-columns: 2em auto;
-    gap:0.7em;
+    gap: 0.7em;
 
-    font-size:15px;
+    font-size: 15px;
 
-    margin-top:10px;
+    margin-top: 5px;
 }
 
-.cb-container input{
-    float:left;
-    cursor:pointer;
+.cb-container input {
+    float: left;
+    cursor: pointer;
 }
 
-input[type="checkbox"]{
+input[type="checkbox"] {
     appearance: none;
-    margin:0;
+    margin: 0;
     background-color: #f5c048;
 
     border-radius: 5px;
-    color:#ea8619;
+    color: #ea8619;
 
-    width:55px;
-    height:20px;
+    width: 40px;
+    height: 30px;
 
     transform: translateY(0.35em);
 
-    display:grid;
+    display: grid;
     place-content: center;
 }
 
-input[type="checkbox"]::before{
-    content:"";
-    width:10px;
-    height:10px;
-    transform:scale(0);
+input[type="checkbox"]::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    transform: scale(0);
     transition: 120ms transform ease-in-out;
     background-color: #ea8619;
+
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
 
     border-radius: 2px;
 
 }
 
-input[type=checkbox]:checked::before{
-    transform:scale(1);
+input[type=checkbox]:checked::before {
+    transform: scale(1);
 }
 
 
-#checkboxes label{
-    display:flex;
+#checkboxes label {
+    display: flex;
     align-items: left;
 
     text-align: left;
 }
 
-input[type="submit"]{
+input[type="submit"] {
     border-radius: 12px;
-    padding:7px;
-    
-    width:25%;
+    padding: 7px;
 
-    color:#ea8619;
+    width: 25%;
+
+    color: #ea8619;
     background-color: #3e531c;
-    border:none;
+    border: none;
     border-radius: 8px;
 
-    cursor:pointer;
+    cursor: pointer;
 }
 
-input[type="submit"]:focus{
+input[type="submit"]:focus {
     background-color: #334517;
 }
 
 a .fa-circle-arrow-up {
     color: #f5c048;
 
-    position:relative;
-    bottom:85px;
+    position: relative;
+    bottom: 95px;
 
-    float:right;
+    float: right;
 
-    margin-right:30px;
+    margin-right: 30px;
 
     cursor: pointer;
 }
 
-.fa-circle-arrow-up:active{
-    color:#d2a63e;
+.fa-circle-arrow-up:active {
+    color: #d2a63e;
 }
 
-#bølge-historie{
-    position:relative;
-    bottom:50px;
+#bølge-historie {
+    position: relative;
+    bottom: 60px;
 }
 
 /*FOOTER STYLES*/
-footer{
-    height:200px;
+footer {
+    height: 200px;
 
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-footer h2{
-    margin-bottom:20px;
+footer h2 {
+    margin-bottom: 20px;
 }
 
-footer p{
-    margin-bottom:5px;
+footer p {
+    margin-bottom: 5px;
 }
-
-
-
-
-
-
-
-
-

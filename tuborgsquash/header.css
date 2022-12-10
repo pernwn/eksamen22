@@ -16,7 +16,6 @@ header{
 #navmobil img{
     width:100%;
     margin-bottom: 30%;
-    margin-right:15px;
 }
 
 #navmobil, #navmobil a{
@@ -117,7 +116,7 @@ label #navmobil{
     z-index: 200;
     position: absolute;
     top:-250px;
-    left: 50%;
+    right: -100%;
     transform: translate(-50%, -50%);
     opacity: 0;
     transition: 0.4s 0s ease-in-out;
@@ -125,7 +124,9 @@ label #navmobil{
 
 label input:checked + #hamburger-menu ~ #navmobil{
     position:absolute;
+    right:-5%;
     top:400px;
+
     opacity:1;
 }
 
