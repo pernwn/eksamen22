@@ -7,14 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tuborg Squash</title>
 
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Kanit:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
     <!--Font Awesome-->
     <script src="https://kit.fontawesome.com/60cddcb918.js" crossorigin="anonymous"></script>
+
+    <!--Styles-->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="header.css">
 
 </head>
 
 <body>
     <header>
-        <nav class="navlaptop">
+        <nav id="navlaptop">
             <a href="#">Konkurrence</a>
             <a href="#">Varianter</a>
 
@@ -24,108 +35,207 @@
             <a href="#">Deltag</a>
         </nav>
 
-        <nav class="navmobil"><i class="fa-solid fa-bars"></i></nav>
 
+        <label>
+            <input type="checkbox" id="burger-input" style="display:none;">
+            <span id="hamburger-menu"><span id="burger"></span></span>
+
+            <a href="#"><img src="images/logo2.png" alt="tuborg-squash-logo"></a>
+
+            <nav id="navmobil">
+                <img src="images/logo.png" alt="tuborg-squash-logo">
+
+                <a href="index.html">Hjem</a>
+                <a href="#k-regler">Konkurrence</a>
+                <a href="#bølge">Varianter</a>
+                <a href="#light">Historien</a>
+                <a href="#bølgetop">Deltag</a>
+
+            </nav>
+            <div class="overlay"></div>
+        </label>
     </header>
 
     <main>
-        <div class="konkurrence">
+        <!--TOPBILLEDE-->
+        <section id="konkurrence">
             <img src="images/poof.png" alt="eksplosion">
-            <div>
-                <h2>Deltag og vind!</h2>
-                <!--TODO:-->
-                <p>Noget om konkurrencen</p>
-            </div>
-        </div>
+            <!--PIL NED-->
+            <a href="#k-regler"><i class="fa-solid fa-circle-arrow-down fa-2x"></i></a>
+        </section>
 
-        <div class="k-regler">
-            <h2>Sæt dit præg på Tuborg Squash</h2>
-            <img src="images/inspi3.png" alt="Inspiration">
+        <section>
+            <!--Bølge svg fra https://getwaves.io/ -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ea8619" fill-opacity="1"
+                    d="M0,64L14.1,80C28.2,96,56,128,85,170.7C112.9,213,141,267,169,245.3C197.6,224,226,128,254,106.7C282.4,85,311,139,339,154.7C367.1,171,395,149,424,128C451.8,107,480,85,508,101.3C536.5,117,565,171,593,165.3C621.2,160,649,96,678,112C705.9,128,734,224,762,240C790.6,256,819,192,847,176C875.3,160,904,192,932,202.7C960,213,988,203,1016,176C1044.7,149,1073,107,1101,122.7C1129.4,139,1158,213,1186,213.3C1214.1,213,1242,139,1271,101.3C1298.8,64,1327,64,1355,80C1383.5,96,1412,128,1426,144L1440,160L1440,0L1425.9,0C1411.8,0,1384,0,1355,0C1327.1,0,1299,0,1271,0C1242.4,0,1214,0,1186,0C1157.6,0,1129,0,1101,0C1072.9,0,1045,0,1016,0C988.2,0,960,0,932,0C903.5,0,875,0,847,0C818.8,0,791,0,762,0C734.1,0,706,0,678,0C649.4,0,621,0,593,0C564.7,0,536,0,508,0C480,0,452,0,424,0C395.3,0,367,0,339,0C310.6,0,282,0,254,0C225.9,0,198,0,169,0C141.2,0,113,0,85,0C56.5,0,28,0,14,0L0,0Z">
+                </path>
+            </svg>
+        </section>
+
+        <section id="info">
+            <h2>Deltag og vind!</h2>
+            <!--TODO:-->
+            <p>Noget om konkurrencen</p>
+        </section>
+
+        <!--BØLGETOP-->
+        <section>
+            <!--Bølge svg fra https://getwaves.io/ -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ea8619" fill-opacity="1"
+                    d="M0,160L13.3,160C26.7,160,53,160,80,170.7C106.7,181,133,203,160,224C186.7,245,213,267,240,282.7C266.7,299,293,309,320,272C346.7,235,373,149,400,138.7C426.7,128,453,192,480,224C506.7,256,533,256,560,256C586.7,256,613,256,640,229.3C666.7,203,693,149,720,128C746.7,107,773,117,800,149.3C826.7,181,853,235,880,245.3C906.7,256,933,224,960,197.3C986.7,171,1013,149,1040,154.7C1066.7,160,1093,192,1120,224C1146.7,256,1173,288,1200,272C1226.7,256,1253,192,1280,144C1306.7,96,1333,64,1360,58.7C1386.7,53,1413,75,1427,85.3L1440,96L1440,320L1426.7,320C1413.3,320,1387,320,1360,320C1333.3,320,1307,320,1280,320C1253.3,320,1227,320,1200,320C1173.3,320,1147,320,1120,320C1093.3,320,1067,320,1040,320C1013.3,320,987,320,960,320C933.3,320,907,320,880,320C853.3,320,827,320,800,320C773.3,320,747,320,720,320C693.3,320,667,320,640,320C613.3,320,587,320,560,320C533.3,320,507,320,480,320C453.3,320,427,320,400,320C373.3,320,347,320,320,320C293.3,320,267,320,240,320C213.3,320,187,320,160,320C133.3,320,107,320,80,320C53.3,320,27,320,13,320L0,320Z">
+                </path>
+            </svg>
+        </section>
+
+        <!--KONKURRENCE REGLER-->
+        <section id="k-regler">
+            <h2>Dit præg på Tuborg Squash</h2>
+
+            <img src="images/inspi4.png" alt="Inspiration">
+
             <div>
                 <!--TODO:-->
                 <p>Konkurrenceregler og inspiration</p>
-                <button><a href="#">Deltag</a></button>
+                <a href="#bølgetop">Deltag</a>
             </div>
-        </div>
 
-        <div class="varianter">
+        </section>
+
+        <!--BØLGEBUND-->
+        <section id="bølge">
+            <!--Bølge svg fra https://getwaves.io/ -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ea8619" fill-opacity="1"
+                    d="M0,64L14.1,80C28.2,96,56,128,85,170.7C112.9,213,141,267,169,245.3C197.6,224,226,128,254,106.7C282.4,85,311,139,339,154.7C367.1,171,395,149,424,128C451.8,107,480,85,508,101.3C536.5,117,565,171,593,165.3C621.2,160,649,96,678,112C705.9,128,734,224,762,240C790.6,256,819,192,847,176C875.3,160,904,192,932,202.7C960,213,988,203,1016,176C1044.7,149,1073,107,1101,122.7C1129.4,139,1158,213,1186,213.3C1214.1,213,1242,139,1271,101.3C1298.8,64,1327,64,1355,80C1383.5,96,1412,128,1426,144L1440,160L1440,0L1425.9,0C1411.8,0,1384,0,1355,0C1327.1,0,1299,0,1271,0C1242.4,0,1214,0,1186,0C1157.6,0,1129,0,1101,0C1072.9,0,1045,0,1016,0C988.2,0,960,0,932,0C903.5,0,875,0,847,0C818.8,0,791,0,762,0C734.1,0,706,0,678,0C649.4,0,621,0,593,0C564.7,0,536,0,508,0C480,0,452,0,424,0C395.3,0,367,0,339,0C310.6,0,282,0,254,0C225.9,0,198,0,169,0C141.2,0,113,0,85,0C56.5,0,28,0,14,0L0,0Z">
+                </path>
+            </svg>
+        </section>
+
+        <!--VARIANTER-->
+        <section id="varianter">
             <h2>Squash til enhver smag</h2>
 
             <div>
-                <img src="images/almsquash.png" alt="Tuborg Squash">
-                <h3>Smagfuld Squash</h3>
-                <!--TODO:-->
-                <p>Beskrivelse af smagen</p>
-                <button><a href="#">Læs mere</a></button>
+                <img src="images/almsquash3.png" alt="Tuborg Squash">
+
+                <div>
+                    <h3>Smagfuld Squash</h3>
+                    <!--TODO:-->
+                    <p>Beskrivelse af smagen</p>
+                    <a href="#">Læs mere</a>
+                </div>
             </div>
 
             <div>
-                <img src="images/lightsquash.png" alt="Tuborg Squash Light">
-                <h3>Lovende Light</h3>
-                <!--TODO:-->
-                <p>Beskrivelse af smagen</p>
-                <button><a href="#">Læs mere</a></button>
+                <img src="images/lightsquash3.png" alt="Tuborg Squash Light">
+
+                <div>
+                    <h3>Lovende Light</h3>
+                    <!--TODO:-->
+                    <p>Beskrivelse af smagen</p>
+                    <a href="#" id="light">Læs mere</a>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <div class="historien">
-            <h2>Forfriskende nostalgisk</h2>
-            <img src="images/historien.png" alt="Tuborg Squash og appelsiner">
-            <h3>Frisk & Frugtig</h3>
-            <!--TODO:-->
-            <p>Noget om deres historie, hvordan de startede op etc.</p>
-        </div>
+        <!--HISTORIEN-->
+        <section id="historien">
+            <h2 id="nostalgi">Forfriskende nostalgisk</h2>
+            <div id="image-holder"><img src="images/historien.png" alt="Tuborg Squash og appelsiner"></div>
 
-        <div class="deltag">
-            <h2>Indsend din illustration her</h2>
-            <p>Her skal der stå noget om hvordan de skal sende billedet og de kan skrive noget om hvad de har lavet</p>
+            <div id="historietekst">
+                <h3>Frisk & Frugtig</h3>
+                <!--TODO:-->
+                <p>Noget om deres historie, hvordan de startede op etc.</p>
+            </div>
+
+        </section>
+
+        <!--BØLGETOP-->
+        <section id="bølgetop">
+            <!--Bølge svg fra https://getwaves.io/ -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ea8619" fill-opacity="1"
+                    d="M0,160L13.3,160C26.7,160,53,160,80,170.7C106.7,181,133,203,160,224C186.7,245,213,267,240,282.7C266.7,299,293,309,320,272C346.7,235,373,149,400,138.7C426.7,128,453,192,480,224C506.7,256,533,256,560,256C586.7,256,613,256,640,229.3C666.7,203,693,149,720,128C746.7,107,773,117,800,149.3C826.7,181,853,235,880,245.3C906.7,256,933,224,960,197.3C986.7,171,1013,149,1040,154.7C1066.7,160,1093,192,1120,224C1146.7,256,1173,288,1200,272C1226.7,256,1253,192,1280,144C1306.7,96,1333,64,1360,58.7C1386.7,53,1413,75,1427,85.3L1440,96L1440,320L1426.7,320C1413.3,320,1387,320,1360,320C1333.3,320,1307,320,1280,320C1253.3,320,1227,320,1200,320C1173.3,320,1147,320,1120,320C1093.3,320,1067,320,1040,320C1013.3,320,987,320,960,320C933.3,320,907,320,880,320C853.3,320,827,320,800,320C773.3,320,747,320,720,320C693.3,320,667,320,640,320C613.3,320,587,320,560,320C533.3,320,507,320,480,320C453.3,320,427,320,400,320C373.3,320,347,320,320,320C293.3,320,267,320,240,320C213.3,320,187,320,160,320C133.3,320,107,320,80,320C53.3,320,27,320,13,320L0,320Z">
+                </path>
+            </svg>
+        </section>
+
+        <!--DELTAG-->
+        <section id="deltag">
+            <div id="deltagtekst">
+                <h2>Indsend din illustration her</h2>
+                <p>Her skal der stå noget om hvordan de skal sende billedet og de kan skrive noget om hvad de har lavet
+                </p>
+            </div>
 
             <div class="container">
-                <form action="#">
-                    <div class="formular">
+                <form action="deltagelse.html">
+                    <div id="formular">
                         <!--NAVN-->
                         <input type="text" id="navn" name="firstname" placeholder="Dit navn...*" required>
 
                         <!--EMAIL-->
                         <input type="text" id="email" name="email" placeholder="Din e-mail...*" required>
 
-                        <!--BY-->
-                        <!--TODO:<select name="by" id="by" required>
-                            <option value="Aarhus">Aarhus</option>
-                            <option value="Aalborg">Aalborg</option>
-                            <option value="København">København</option>
-                            <option value="Odense">Odense</option>
-                            </select>-->
+                        <!--UPLOAD-->
+                        <input type="file" id="file" name="file" accept="image/png, image/jpeg, image/jpg, image/psd"
+                            required>
+
 
                         <!--BESKED-->
                         <textarea name="subject" id="besked" cols="30" rows="10"
                             placeholder="Fortæl os lidt om din illustration..."></textarea>
-
-                        <!--UPLOAD-->
-                        <input type="file" id="file" name="filename" required>
                     </div>
 
                     <!--CHECKBOX-->
-                    <div class="checkboxes">
-                        <input type="checkbox" id="regler" name="regler" value="regler" required>
-                        <label for="regler">Jeg accepterer regler og vilkår for konkurrencen*</label>
+                    <div id="checkboxes">
+                        <label class="cb-container">
+                            <input type="checkbox" class="check" name="regler" value="regler" required>
+                            Jeg accepterer regler og vilkår for konkurrencen*
+                        </label>
 
-                        <input type="checkbox" id="alder" name="alder" value="alder" required>
-                        <label for="alder">Jeg bekræfter, at jeg er over den lovpligtige alder*</label>
+                        <label class="cb-container">
+                            <input type="checkbox" class="check" name="alder" value="alder" required>
+                            Jeg bekræfter, at jeg er over den lovpligtige alder*
+                        </label>
+
                     </div>
 
                     <!--SEND KNAP-->
-                    <input type="submit" value="Send">
+                    <input type="submit" value="Send" action="deltagelse.html">
+                    
 
                 </form>
             </div>
-        </div>
+
+
+
+        </section>
+
+        <!--PIL OP-->
+        <a href="#"><i class="fa-solid fa-circle-arrow-up fa-2x"></i></a>
+
+
+        <!--BØLGEBUND-->
+        <section id="bølge-historie">
+            <!--Bølge svg fra https://getwaves.io/ -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ea8619" fill-opacity="1"
+                    d="M0,64L14.1,80C28.2,96,56,128,85,170.7C112.9,213,141,267,169,245.3C197.6,224,226,128,254,106.7C282.4,85,311,139,339,154.7C367.1,171,395,149,424,128C451.8,107,480,85,508,101.3C536.5,117,565,171,593,165.3C621.2,160,649,96,678,112C705.9,128,734,224,762,240C790.6,256,819,192,847,176C875.3,160,904,192,932,202.7C960,213,988,203,1016,176C1044.7,149,1073,107,1101,122.7C1129.4,139,1158,213,1186,213.3C1214.1,213,1242,139,1271,101.3C1298.8,64,1327,64,1355,80C1383.5,96,1412,128,1426,144L1440,160L1440,0L1425.9,0C1411.8,0,1384,0,1355,0C1327.1,0,1299,0,1271,0C1242.4,0,1214,0,1186,0C1157.6,0,1129,0,1101,0C1072.9,0,1045,0,1016,0C988.2,0,960,0,932,0C903.5,0,875,0,847,0C818.8,0,791,0,762,0C734.1,0,706,0,678,0C649.4,0,621,0,593,0C564.7,0,536,0,508,0C480,0,452,0,424,0C395.3,0,367,0,339,0C310.6,0,282,0,254,0C225.9,0,198,0,169,0C141.2,0,113,0,85,0C56.5,0,28,0,14,0L0,0Z">
+                </path>
+            </svg>
+        </section>
 
     </main>
 
+
+    <!--FOOTER-->
     <footer>
         <h2>Har du spørgsmål?</h2>
-        <p class="tlf">Tlf: +45 12 34 56 78</a></p>
+        <p class="tlf">Tlf: +45 12 34 56 78</p>
         <p class="email">E-mail: squash@eaaa.dk</p>
     </footer>
 

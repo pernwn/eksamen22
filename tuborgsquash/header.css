@@ -1,0 +1,162 @@
+/*HEADER STYLES*/
+header{
+    background-color:#3e531c;
+    position:fixed;
+    width:100%;
+    z-index:1;
+
+    height:80px;
+}
+
+
+#navlaptop{
+    display:none;
+}
+
+#navmobil img{
+    width:100%;
+    margin-bottom: 30%;
+    margin-right:15px;
+}
+
+#navmobil, #navmobil a{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#navmobil a{
+    color:#3e531c;
+    background-color: #97a547;
+    border-radius: 10px;
+
+    width:90%;
+
+    text-align: center;
+    padding:7%;
+    margin-bottom:15%;
+
+    text-decoration: none;
+}
+
+/*Burger menu styles med hjælp fra https://alvarotrigo.com/blog/hamburger-menu-css-responsive/ */
+#hamburger-menu{
+    position:absolute;
+    right: -40px;
+    top: -38px;
+    z-index: 100;
+    width: 130px;
+    height: 110px;
+    background: #3e531c;
+    border-radius: 50%;
+    transition: .5s ease-in-out;
+    box-shadow: 0 0 0 0 #3e531c, 0 0 0 0 #3e531c;
+    cursor: pointer;
+
+    opacity: 0.9;
+}
+
+/*Lav burgeren*/
+#burger{
+    position: absolute;
+    top: 75px;
+    left: 30px;
+    width: 35px;
+    height: 4px;
+    background: #ea8619;
+    display: block;
+    transform-origin: center;
+    transition: .5s ease-in-out;
+
+    border-radius: 10px;
+}
+
+#burger:after, #burger:before{
+    transition: .5s ease-in-out;
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #ea8619;
+
+    border-radius: 10px;
+}
+
+#burger:before{
+    top:-11px;
+}
+
+#burger:after{
+    bottom:-11px;
+}
+
+
+label input:checked + #hamburger-menu{
+    box-shadow: 0 0 0 100vw #3e531c, 0 0 0 100vh #3e531c;
+    border-radius: 0;
+}
+
+label input:checked + #hamburger-menu #burger{
+    transform:rotate(45deg);
+}
+
+label input:checked + #hamburger-menu #burger:after{
+    transform:rotate(90deg);
+    bottom:0;
+}
+
+label input:checked + #hamburger-menu #burger:before{
+    transform:rotate(90deg);
+    top:0;
+}
+
+
+label #navmobil{
+    z-index: 200;
+    position: absolute;
+    top:-250px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.4s 0s ease-in-out;
+}
+
+label input:checked + #hamburger-menu ~ #navmobil{
+    position:absolute;
+    top:400px;
+    opacity:1;
+}
+
+/*Gemmer logo i header når menuen kommer frem*/
+label a img{
+    opacity: 1;
+    transition:0.4s ease-in-out;
+    margin-left:15px;
+}
+
+label input:checked ~ a img {
+    opacity:0;
+}
+
+/*Putter gennemsigtigt sort overlay når burgermenu aktiveres*/
+#burger-input:checked ~ .overlay{
+    visibility:visible;
+    opacity:0.4;
+}
+
+.overlay{
+    position:fixed;
+    top:0;
+    right:0;
+    width:100%;
+    height:100%;
+    opacity:0;
+    visibility: hidden;
+    transition: opacity .35s, visibility .35s, height .35s;
+    overflow:hidden;
+    background:black;
+    z-index:-1;
+}
+
