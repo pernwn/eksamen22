@@ -64,8 +64,6 @@ a {
     font-weight: 400;
     letter-spacing: 0.3px;
     margin-bottom: 10px;
-    /*TODO:
-    text-align:center;*/
 }
 
 #info,
@@ -283,6 +281,7 @@ footer {
     margin-right: 50px;
     margin-left: 50px;
     margin-top: 70%;
+   
 
     position: absolute;
 
@@ -466,7 +465,7 @@ input[type="submit"] {
     cursor: pointer;
 }
 
-input[type="submit"]:focus {
+input[type="submit"]:active {
     background-color: #334517;
 }
 

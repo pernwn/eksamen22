@@ -201,7 +201,7 @@ header #navlaptop {
     position: relative;
     top: 8px;
 
-    padding: 7px;
+    padding: 8px;
 }
 
 #navlaptop a:hover {
@@ -222,4 +222,44 @@ header #navlaptop {
     background-color: #3e531c;
 }
     
+}
+
+@media screen and (min-width:768px) and (max-width:1023px){
+    /*HEADER TABLET STYLES*/
+    label #navmobil {
+        z-index: 200;
+        position: absolute;
+        top: -200px;
+        right: -100%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: 0.4s 0s ease-in-out;
+    }
+
+    label input:checked+#hamburger-menu~#navmobil {
+        position: absolute;
+        right: 25%;
+        top: 450px;
+    
+        opacity: 1;
+    }
+
+
+#navmobil a {
+    color: #3e531c;
+    background-color: #97a547;
+    border-radius: 10px;
+
+    width: 90%;
+
+    text-align: center;
+    padding: 8%;
+    margin-bottom: 15%;
+
+    text-decoration: none;
+}
+#navmobil img {
+    width: 100%;
+    margin-bottom: 15%;
+}
 }

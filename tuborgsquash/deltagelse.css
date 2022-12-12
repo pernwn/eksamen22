@@ -6,7 +6,7 @@ body{
 #mobil{
     color:#3e531c;
     height:845px;
-    top:80px;
+
 
     background-image: url(images/appelsinskiver4.png);
     background-repeat: no-repeat;
@@ -86,19 +86,6 @@ main #mobil, header label{
 /*LAPTOP*/
 @media screen and (min-width:1024px){
 
-    #navlaptop a {
-        border: none;
-        padding: 0;
-        margin: 0;
-        width: 10%;
-        border-radius: 50%;
-        background-color: #3e531c;
-    }
-
-    #navlaptop a:hover {
-        background-color: #3e531c;
-    }
-
     main #mobil, header label{
         display:none;
     }
@@ -106,7 +93,6 @@ main #mobil, header label{
     main #laptop, #navlaptop{
         display:block;
     }
-
 
     main{
         color:#3e531c;
@@ -124,7 +110,7 @@ main #mobil, header label{
         opacity:0.6;
     
         border-radius: 20px;
-        padding-bottom:250px;
+        padding-bottom:300px;
         padding-top:250px;
 
         margin-left:360px;
@@ -147,7 +133,7 @@ main #mobil, header label{
         width:100%;
     
         position:relative;
-        bottom:500px;
+        bottom:550px;
     
         animation:slideobjects 1s ease-in-out 0s 1 forwards;
     }
@@ -172,11 +158,58 @@ main #mobil, header label{
     }
 
     #laptop p{
-        font-family: "Merriweather", serif;
-        font-size:20pt;
-        font-weight:400;
+        font-size:25pt;
+        font-weight:300;
 
     }
+}
+
+/*TABLET*/
+@media screen and (min-width:768px) and (max-width:1023px){
+    main #laptop{
+        display:none;
+    }
+
+    #mobil{
+        height:1100px;
+    }
+
+    #mobil > div:first-child{
+        background-color: #f5c048;
+        
+        opacity:0.6;
+    
+        border-radius: 20px;
+        padding:200px;
+        margin-left:100px;
+        margin-right:100px;
+    
+        position:relative;
+        top:190px;
+    
+        animation:slide 1s ease-in-out 0s 1 forwards;
+        
+    }
+
+    main #appelsin img{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    
+        position:relative;
+        bottom:60px;
+
+    
+        animation:slideobjects 1s ease-in-out 0s 1 forwards;
+    }
+
+    main p{
+        font-size: 20pt;
+        font-weight: 300;
+    }
+
 }
 
 
