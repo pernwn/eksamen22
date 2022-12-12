@@ -48,60 +48,6 @@
         transition: 0.4s ease-in-out;
     }
 
-    /*HEADER STYLES*/
-    header label{
-        display:none;
-    }
-
-    header #navlaptop{
-
-        display:flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-
-        margin-left:200px;
-        margin-right:200px;
-    }
-
-    #navlaptop a{
-        font-family: "Merriweather", serif;
-        font-size: 15pt;
-        width:15%;
-        text-align: center;
-
-        font-weight: 300;
-        text-decoration: none;
-        color:#ea8619;
-        background-color: #3e531c;
-
-        border:2px solid #ea8619;
-        border-radius: 15px;
-
-        position:relative;
-        top:8px;
-
-        padding:7px;
-    }
-
-    #navlaptop a:hover{
-        background-color: #ea851912;
-    }
-
-    #navlaptop a:active{
-        background-color: #ea85192e;
-        
-    }
-
-    #navlaptop a:nth-child(3){
-        border:none;
-        padding:0;
-        margin:0;
-        width:10%;
-        border-radius: 50%;
-        background-color: #3e531c;
-    }
-
 
     /*KONKURRENCE STYLES*/
     #konkurrence {
@@ -262,7 +208,7 @@
     }
 
     #varianter a:hover {
-        background-color: #f5c048;
+        background-color: #f3c760;
         color: #3e531c;
         border: 3px solid #3e531c;
     }
@@ -391,6 +337,7 @@
     footer h2{
         margin-bottom:40px;
     }
+    
   
 
 }

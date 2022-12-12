@@ -1,47 +1,52 @@
 /*HEADER STYLES*/
-header{
-    background-color:#3e531c;
-    position:fixed;
-    width:100%;
-    z-index:1;
+header {
+    background-color: #3e531c;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 
-    height:80px;
+    height: 80px;
 }
 
-
-#navlaptop{
-    display:none;
+header label{
+    display:block;
 }
 
-#navmobil img{
-    width:100%;
-    margin-bottom: 30%;
+header #navlaptop {
+    display: none;
 }
 
-#navmobil, #navmobil a{
-    display:flex;
+#navmobil img {
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+#navmobil,
+#navmobil a {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-#navmobil a{
-    color:#3e531c;
+#navmobil a {
+    color: #3e531c;
     background-color: #97a547;
     border-radius: 10px;
 
-    width:90%;
+    width: 65%;
 
     text-align: center;
-    padding:7%;
-    margin-bottom:15%;
+    padding: 6%;
+    margin-bottom: 12%;
 
     text-decoration: none;
 }
 
+
 /*Burger menu styles med hjælp fra https://alvarotrigo.com/blog/hamburger-menu-css-responsive/ */
-#hamburger-menu{
-    position:absolute;
+#hamburger-menu {
+    position: absolute;
     right: -40px;
     top: -38px;
     z-index: 100;
@@ -57,7 +62,7 @@ header{
 }
 
 /*Lav burgeren*/
-#burger{
+#burger {
     position: absolute;
     top: 75px;
     left: 30px;
@@ -71,7 +76,8 @@ header{
     border-radius: 10px;
 }
 
-#burger:after, #burger:before{
+#burger:after,
+#burger:before {
     transition: .5s ease-in-out;
     content: "";
     position: absolute;
@@ -83,81 +89,137 @@ header{
     border-radius: 10px;
 }
 
-#burger:before{
-    top:-11px;
+#burger:before {
+    top: -11px;
 }
 
-#burger:after{
-    bottom:-11px;
+#burger:after {
+    bottom: -11px;
 }
 
 
-label input:checked + #hamburger-menu{
+label input:checked+#hamburger-menu {
     box-shadow: 0 0 0 100vw #3e531c, 0 0 0 100vh #3e531c;
     border-radius: 0;
 }
 
-label input:checked + #hamburger-menu #burger{
-    transform:rotate(45deg);
+label input:checked+#hamburger-menu #burger {
+    transform: rotate(45deg);
 }
 
-label input:checked + #hamburger-menu #burger:after{
-    transform:rotate(90deg);
-    bottom:0;
+label input:checked+#hamburger-menu #burger:after {
+    transform: rotate(90deg);
+    bottom: 0;
 }
 
-label input:checked + #hamburger-menu #burger:before{
-    transform:rotate(90deg);
-    top:0;
+label input:checked+#hamburger-menu #burger:before {
+    transform: rotate(90deg);
+    top: 0;
 }
 
 
-label #navmobil{
+label #navmobil {
     z-index: 200;
     position: absolute;
-    top:-250px;
+    top: -200px;
     right: -100%;
     transform: translate(-50%, -50%);
     opacity: 0;
     transition: 0.4s 0s ease-in-out;
 }
 
-label input:checked + #hamburger-menu ~ #navmobil{
-    position:absolute;
-    right:-5%;
-    top:380px;
+label input:checked+#hamburger-menu~#navmobil {
+    position: absolute;
+    right: -5%;
+    top: 350px;
 
-    opacity:1;
+    opacity: 1;
 }
 
 /*Gemmer logo i header når menuen kommer frem*/
-label a img{
+label a img {
     opacity: 1;
-    transition:0.4s ease-in-out;
-    margin-left:15px;
+    transition: 0.4s ease-in-out;
+    margin-left: 15px;
 }
 
-label input:checked ~ a img {
-    opacity:0;
+label input:checked~a img {
+    opacity: 0;
 }
 
 /*Putter gennemsigtigt sort overlay når burgermenu aktiveres*/
-#burger-input:checked ~ .overlay{
-    visibility:visible;
-    opacity:0.4;
+#burger-input:checked~.overlay {
+    visibility: visible;
+    opacity: 0.4;
 }
 
-.overlay{
-    position:fixed;
-    top:0;
-    right:0;
-    width:100%;
-    height:100%;
-    opacity:0;
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
     visibility: hidden;
     transition: opacity .35s, visibility .35s, height .35s;
-    overflow:hidden;
-    background:black;
-    z-index:-1;
+    overflow: hidden;
+    background: black;
+    z-index: -1;
 }
 
+@media screen and (min-width:1024px) {
+    /*HEADER LAPTOP STYLES*/
+header label {
+    display: none;
+}
+
+header #navlaptop {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+#navlaptop a {
+    font-family: "Merriweather", serif;
+    font-size: 15pt;
+    width: 15%;
+    text-align: center;
+
+    font-weight: 300;
+    text-decoration: none;
+    color: #ea8619;
+    background-color: #3e531c;
+
+    border: 2px solid #ea8619;
+    border-radius: 15px;
+
+    position: relative;
+    top: 8px;
+
+    padding: 7px;
+}
+
+#navlaptop a:hover {
+    background-color: #ea851912;
+}
+
+#navlaptop a:active {
+    background-color: #ea85192e;
+
+}
+
+#navlaptop a:nth-child(3) {
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: 10%;
+    border-radius: 50%;
+    background-color: #3e531c;
+}
+    
+}

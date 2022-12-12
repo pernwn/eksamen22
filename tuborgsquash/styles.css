@@ -11,10 +11,12 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    max-width: 100%;
 }
 
 body {
-    background-color: #f5c048;
+    background-color: #f3c760;
     overflow-x: hidden;
 }
 
@@ -41,15 +43,15 @@ a {
 /*MOBIL TEKST STTYLES*/
 h2 {
     font-size: 17pt;
-    font-weight: 600;
-    letter-spacing: 0.3px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
     margin-bottom: 10px;
 }
 
 h3 {
     font-size: 15pt;
-    font-weight: 400;
-    letter-spacing: 0.3px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
     margin-bottom: 10px;
 }
 
@@ -59,7 +61,7 @@ label,
 textarea,
 a {
     font-size: 12pt;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 0.3px;
     margin-bottom: 10px;
     /*TODO:
@@ -244,7 +246,7 @@ footer {
 }
 
 #varianter a {
-    color: #f5c048;
+    color: #f3c760;
     text-decoration: none;
 }
 
@@ -446,7 +448,7 @@ input[type=checkbox]:checked::before {
 
 #checkboxes label {
     display: flex;
-    align-items: left;
+    float: left;
 
     text-align: left;
 }

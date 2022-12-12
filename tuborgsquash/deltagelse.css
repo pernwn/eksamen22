@@ -2,9 +2,10 @@ body{
     background-color: #ea8619;
 }
 
-main{
+
+#mobil{
     color:#3e531c;
-    height:765px;
+    height:845px;
     top:80px;
 
     background-image: url(images/appelsinskiver4.png);
@@ -17,6 +18,7 @@ main{
     align-items: center;
 
 }
+
 
 main p{
     font-weight: 400;
@@ -41,23 +43,25 @@ main p{
 }
 
 
-main > div:first-child{
+#mobil > div:first-child{
     background-color: #f5c048;
     
     opacity:0.6;
 
     border-radius: 20px;
     padding:150px;
+    margin-left:40px;
+    margin-right:40px;
 
     position:relative;
-    top:90px;
+    top:150px;
 
     animation:slide 1s ease-in-out 0s 1 forwards;
     
 
 }
 
-main #appelsin, main #modtaget{
+main #appelsin{
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -65,10 +69,114 @@ main #appelsin, main #modtaget{
     text-align: center;
 
     position:relative;
-    bottom:270px;
+    bottom:210px;
 
     animation:slideobjects 1s ease-in-out 0s 1 forwards;
+}
 
+
+main #laptop, #navlaptop{
+    display:none;
+}
+
+main #mobil, header label{
+    display:block;
+}
+
+/*LAPTOP*/
+@media screen and (min-width:1024px){
+
+    #navlaptop a {
+        border: none;
+        padding: 0;
+        margin: 0;
+        width: 10%;
+        border-radius: 50%;
+        background-color: #3e531c;
+    }
+
+    #navlaptop a:hover {
+        background-color: #3e531c;
+    }
+
+    main #mobil, header label{
+        display:none;
+    }
+
+    main #laptop, #navlaptop{
+        display:block;
+    }
+
+
+    main{
+        color:#3e531c;
+        
+        height:1000px;
+
+        background-image: url(images/appelsinskiver6.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #laptop > div:first-child{
+        background-color: #f5c048;
+    
+        opacity:0.6;
+    
+        border-radius: 20px;
+        padding-bottom:250px;
+        padding-top:250px;
+
+        margin-left:360px;
+        margin-right:360px;
+
+        position:relative;
+        bottom:500px;
+
+        animation:slide 1s ease-in-out 0s 1 forwards;
+        
+    }
+
+    #appelsin-laptop{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        width:100%;
+    
+        position:relative;
+        bottom:500px;
+    
+        animation:slideobjects 1s ease-in-out 0s 1 forwards;
+    }
+
+
+    @keyframes slide{
+        0%{
+            transform:translateY(650px);
+        }
+        100%{
+            transform:translateY(700px);
+        }
+    }
+    
+    @keyframes slideobjects{
+        0%{
+            transform:translateY(0);
+        }
+        100%{
+            transform:translateY(120px);
+        }
+    }
+
+    #laptop p{
+        font-family: "Merriweather", serif;
+        font-size:20pt;
+        font-weight:400;
+
+    }
 }
 
 
