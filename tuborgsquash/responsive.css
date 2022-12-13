@@ -107,8 +107,7 @@
     #k-regler {
         height: auto;
         bottom: 20px;
-        padding-bottom:100px;
-        padding-top:100px;
+        padding-top:150px;
     }
 
     #k-pic-mobil {
@@ -126,8 +125,8 @@
 
     #k-regler div {
         margin-top: 4%;
-        margin-right:10%;
-        margin-left:10%;
+        margin-right:12%;
+        margin-left:12%;
     }
 
     #k-regler ol{
@@ -282,7 +281,7 @@
     }
 
     .cb-container{
-        margin-top: 10px;
+        margin-top: 25px;
         font-size:17pt;
 
     }
@@ -308,7 +307,7 @@
         right:150px;
 
         position: relative;
-        bottom: 118px;
+        bottom: 120px;
 
         transition: 0.3s;
 
@@ -333,7 +332,7 @@
 
     input[type="submit"]{
         height:65px;
-        border-radius: 20px;
+        border-radius: 25px;
         cursor:pointer;
 
         transition:0.3s ease-in-out;
@@ -548,7 +547,7 @@
 
     .cb-container{
 
-        margin-top: 11px;
+        margin-top: 15px;
         font-size:15pt;
 
     }
@@ -570,7 +569,7 @@
     input[type="submit"]{
         height:60px;
         width:25%;
-        border-radius: 17px;
+        border-radius: 20px;
     }
 
     input[type="submit"]:active {
@@ -596,7 +595,7 @@
         right:80px;
 
         position: relative;
-        bottom: 118px;
+        bottom: 110px;
 
         transition: 0.3s;
 

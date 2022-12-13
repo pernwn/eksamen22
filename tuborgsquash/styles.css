@@ -143,7 +143,9 @@ footer {
     position: relative;
     bottom: 10px;
 
-    padding-bottom:100px;
+    padding-bottom:50px;
+    padding-top:20px;
+    
 }
 
 #k-pic-mobil{
@@ -186,7 +188,7 @@ footer {
     background-color: #3e531c;
     border: none;
 
-    border-radius: 18px;
+    border-radius: 14px;
     padding: 8px;
     padding-right: 20px;
     padding-left: 20px;
@@ -331,7 +333,7 @@ footer {
     position: relative;
     bottom: 10px;
 
-    padding: 30px;
+    padding: 35px;
 }
 
 #deltagtekst {
@@ -465,7 +467,7 @@ input[type="file"]::file-selector-button:focus {
 }
 
 input[type="submit"] {
-    border-radius: 14px;
+    border-radius: 20px;
     
     height:50px;
 
@@ -490,11 +492,11 @@ input[type="submit"]:active {
     color: #3e531c;
 
     position: relative;
-    bottom: 95px;
+    bottom: 102px;
 
     float: right;
 
-    margin-right: 30px;
+    margin-right: 35px;
 
     cursor: pointer;
 }
