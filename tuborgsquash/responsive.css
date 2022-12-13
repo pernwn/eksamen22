@@ -271,6 +271,7 @@
         font-size: 15pt;
         padding:15px;
         width:150%;
+        border-radius: 15px;
     }
 
     #deltagtekst{
@@ -280,8 +281,12 @@
         margin-bottom:5%;
     }
 
+    #deltagtekst h2{
+        margin-bottom:30px;
+    }
+
     .cb-container{
-        margin-top: 25px;
+        margin-top: 30px;
         font-size:17pt;
 
     }
@@ -289,6 +294,7 @@
     #checkboxes input[type="checkbox"]{
         height:40px;
         transform: translateY(0em);
+        border-radius: 10px;
         
     }
 
@@ -536,25 +542,32 @@
         font-size: 15pt;
         padding:15px;
         width:120%;
+        border-radius: 15px;
     }
 
     #deltagtekst{
         padding-right:10%;
         padding-left:10%;
         margin-top:5%;
-        margin-bottom:5%;
+        margin-bottom:4%;
+    }
+
+    #deltagtekst h2{
+        margin-bottom:20px;
     }
 
     .cb-container{
 
-        margin-top: 15px;
+        margin-top: 20px;
         font-size:15pt;
 
     }
 
     #checkboxes input[type="checkbox"]{
         height:40px;
-        transform: translateY(0em);
+        transform: translateY(-0.1em);
+
+        border-radius: 10px;
 
         appearance: none;
         margin: 0;
