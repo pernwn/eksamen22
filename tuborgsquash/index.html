@@ -5,9 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <meta name="theme-color" content="#3e531c">
-    
+    <!--TODO:-->
+    <meta name="description" content="">
+    <meta name="keywords"
+        content="tuborg squash, tuborg, forfriskende, konkurrence, appelsin, appelsinvand, sodavand, afkølende, hygge, klassiker, dansk, familie, sommer, orange, grøn, velsmagende, koldt, kreativ, tegning, illustration">
+
     <title>Tuborg Squash</title>
 
     <!--Google Fonts-->
@@ -34,7 +38,7 @@
             <a href="#bølge">Varianter</a>
 
             <a href="#"><img src="images/logo2.png" id="laptop-logo" alt="tuborg-squash-logo"></a>
-            
+
             <a href="#light">Historien</a>
             <a href="#bølgetop">Deltag</a>
         </nav>
@@ -46,17 +50,17 @@
 
             <a href="#"><img src="images/logo2.png" alt="tuborg-squash-logo"></a>
 
-            <nav id="navmobil">
+            <span id="navmobil">
                 <img src="images/logo.png" alt="tuborg-squash-logo">
 
                 <a href="index.html">Hjem</a>
-                <a href="#k-regler">Konkurrence</a>
+                <a href="#konkurrence">Konkurrence</a>
                 <a href="#bølge">Varianter</a>
                 <a href="#light">Historien</a>
                 <a href="#bølgetop">Deltag</a>
 
-            </nav>
-            <div class="overlay"></div>
+            </span>
+            <span class="overlay"></span>
         </label>
     </header>
 
@@ -83,11 +87,11 @@
         <section id="info">
             <h2>Deltag og vind!</h2>
             <!--TODO:-->
-            <p>Noget om konkurrencen</p>
+            <p>Noget om konkurrencen... Hvis du godt kunne tænkte dig at deltage i vores konkurrence, så læs videre.</p>
         </section>
 
         <!--BØLGETOP-->
-        <section>
+        <section id="regel-bølge">
             <!--Bølge svg fra https://getwaves.io/ -->
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path fill="#ea8619" fill-opacity="1"
@@ -105,7 +109,28 @@
 
             <div>
                 <!--TODO:-->
-                <p>Konkurrenceregler og inspiration</p>
+                <div>
+                    <p>
+                        Du skal lave en illustration af hvad <i>du</i> forbinder med Tuborg Squash – det kan være et
+                        minde
+                        med familien, en følelse eller en begivenhed.
+                    </p>
+                    <div>
+                        <h3>To regler:</h3>
+                        <ol>
+                            <li>Baggrunden <i>skal</i> være orange.</li>
+                            <li>Der skal stå Tuborg og/eller Squash på den.</li>
+                        </ol>
+                    </div>
+                    <br>
+                    <p>
+                        På ovenstående billede er der lidt inspiration til hvordan din tegning kan se ud på vores dåser
+                        og
+                        flasker.
+                        <br><br>Held og lykke!
+                    </p>
+                </div>
+
                 <a href="#bølgetop">Deltag</a>
             </div>
 
@@ -132,7 +157,8 @@
                 <div id="almsquash-tekst">
                     <h3>Smagfuld Squash</h3>
                     <!--TODO:-->
-                    <p>Beskrivelse af smagen Beskrivelse af smagen Beskrivelse af smagen Beskrivelse af smagen Beskrivelse af smagen</p>
+                    <p>Beskrivelse af smagen Beskrivelse af smagen Beskrivelse af smagen Beskrivelse af smagen
+                        Beskrivelse af smagen</p>
                     <a href="#">Læs mere</a>
                 </div>
             </div>
@@ -144,7 +170,8 @@
                 <div id="lightsquash-tekst">
                     <h3>Lovende Light</h3>
                     <!--TODO:-->
-                    <p>Beskrivelse af smagen Beskrivelse af smagen Beskrivelse af smagen Beskrivelse af smagen Beskrivelse af smagen</p>
+                    <p>Beskrivelse af smagen Beskrivelse af smagen Beskrivelse af smagen Beskrivelse af smagen
+                        Beskrivelse af smagen</p>
                     <a href="#" id="light">Læs mere</a>
                 </div>
             </div>
@@ -153,8 +180,10 @@
         <!--HISTORIEN-->
         <section id="historien">
             <h2 id="nostalgi">Forfriskende nostalgisk</h2>
-            <div id="image-holder"><img src="images/historien4.png" id="historie-mobil" alt="Tuborg Squash og appelsiner"></div>
-            <div id="image-holder-laptop" ><img src="images/historien7.png" id="historie-laptop" alt="Tuborg Squash og appelsiner"></div>
+            <div id="image-holder"><img src="images/historien4.png" id="historie-mobil"
+                    alt="Tuborg Squash og appelsiner"></div>
+            <div id="image-holder-laptop"><img src="images/historien7.png" id="historie-laptop"
+                    alt="Tuborg Squash og appelsiner"></div>
 
 
             <div id="historietekst">
@@ -179,7 +208,12 @@
         <section id="deltag">
             <div id="deltagtekst">
                 <h2>Indsend din illustration her</h2>
-                <p>Her skal der stå noget om hvordan de skal sende billedet og de kan skrive noget om hvad de har lavet
+                <p>
+                    Skriv dit navn og e-mail adresse i felterne nedenfor, samt vedhæft din illustration. Vi glæder os
+                    rigtig meget til at se hvad du finder på! <br><br>Du må også meget gerne beskrive billedet og hvad
+                    det
+                    betyder for dig – men det er ikke et krav.
+                    Vi krydser fingre for dig!
                 </p>
             </div>
 
@@ -205,7 +239,7 @@
                     <!--CHECKBOX-->
                     <div id="checkboxes">
                         <label class="cb-container">
-                            <input type="checkbox" class="check" name="regler" value="regler" display="none" required>
+                            <input type="checkbox" class="check" name="regler" value="regler" required>
                             Jeg accepterer regler og vilkår for konkurrencen*
                         </label>
 
@@ -248,7 +282,7 @@
     <!--FOOTER-->
     <footer>
         <h2>Har du spørgsmål?</h2>
-        <p class="tlf">Tlf: +45 12 34 56 78</p>
+        <p><a href="tel:+4512345678">+45 12 34 56 78</a></p>
         <p class="email">E-mail: squash@eaaa.dk</p>
     </footer>
 

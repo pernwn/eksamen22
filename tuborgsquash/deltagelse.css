@@ -54,7 +54,7 @@ main p{
     margin-right:40px;
 
     position:relative;
-    top:150px;
+    top:100px;
 
     animation:slide 1s ease-in-out 0s 1 forwards;
     
@@ -69,7 +69,7 @@ main #appelsin{
     text-align: center;
 
     position:relative;
-    bottom:210px;
+    bottom:270px;
 
     animation:slideobjects 1s ease-in-out 0s 1 forwards;
 }
@@ -97,7 +97,7 @@ main #mobil, header label{
     main{
         color:#3e531c;
         
-        height:1000px;
+        height:955px;
 
         background-image: url(images/appelsinskiver6.png);
         background-repeat: no-repeat;
@@ -117,7 +117,7 @@ main #mobil, header label{
         margin-right:360px;
 
         position:relative;
-        bottom:500px;
+        bottom:550px;
 
         animation:slide 1s ease-in-out 0s 1 forwards;
         
@@ -133,7 +133,7 @@ main #mobil, header label{
         width:100%;
     
         position:relative;
-        bottom:550px;
+        bottom:600px;
     
         animation:slideobjects 1s ease-in-out 0s 1 forwards;
     }

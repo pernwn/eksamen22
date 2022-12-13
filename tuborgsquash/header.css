@@ -130,7 +130,7 @@ label #navmobil {
 
 label input:checked+#hamburger-menu~#navmobil {
     position: absolute;
-    right: -5%;
+    right: -9%;
     top: 350px;
 
     opacity: 1;
@@ -199,7 +199,7 @@ header #navlaptop {
     border-radius: 15px;
 
     position: relative;
-    top: 8px;
+    top: 2px;
 
     padding: 8px;
 }
@@ -238,7 +238,7 @@ header #navlaptop {
 
     label input:checked+#hamburger-menu~#navmobil {
         position: absolute;
-        right: 25%;
+        right: 23%;
         top: 450px;
     
         opacity: 1;

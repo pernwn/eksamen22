@@ -18,6 +18,7 @@ html {
 body {
     background-color: #f3c760;
     overflow-x: hidden;
+    width:100%;
 }
 
 main {
@@ -35,7 +36,7 @@ p,
 input,
 label,
 textarea,
-a {
+a, ol li {
     font-family: "Kanit", sans-serif;
 }
 
@@ -43,14 +44,14 @@ a {
 /*MOBIL TEKST STTYLES*/
 h2 {
     font-size: 17pt;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: 0.5px;
     margin-bottom: 10px;
 }
 
 h3 {
     font-size: 15pt;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 0.4px;
     margin-bottom: 10px;
 }
@@ -59,9 +60,9 @@ p,
 input,
 label,
 textarea,
-a {
+a, ol {
     font-size: 12pt;
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: 0.3px;
     margin-bottom: 10px;
 }
@@ -75,7 +76,7 @@ footer {
 
 #k-regler,
 #deltag {
-    color: #f5c048;
+    color: #f3c760;
 }
 
 
@@ -131,7 +132,7 @@ footer {
 /*KONKURRENCE REGLER STYLES*/
 #k-regler {
     background-color: #ea8619;
-    height: 600px;
+    height:auto;
     width: 100%;
 
     display: flex;
@@ -141,6 +142,8 @@ footer {
 
     position: relative;
     bottom: 10px;
+
+    padding-bottom:100px;
 }
 
 #k-pic-mobil{
@@ -155,6 +158,7 @@ footer {
 #k-regler a {
     color: #ea8619;
     text-decoration: none;
+  
 }
 
 #k-regler h2 {
@@ -167,6 +171,8 @@ footer {
 #k-regler div {
     text-align: center;
     margin-top: 7%;
+    margin-right:5%;
+    margin-left:5%;
 }
 
 #k-regler div p {
@@ -346,25 +352,29 @@ textarea {
     width: 100%;
 
     border: solid 2px #ea8619;
-    border-radius: 10px;
+    border-radius:10px;
 
     color: #ea8619;
-    background-color: #f5c048;
+    background-color: #f3c760;
     outline:none;
 
     transition:0.4s;
 }
 
+::-webkit-input-placeholder{
+    color:#ea8619;
+    opacity:0.5;
+}
+
 #formular > input:focus, textarea:focus{
     border:solid 2px #c06605;
-   
 }
 
 /*Input – navn, email, upload, besked – https://developer.mozilla.org/en-US/docs/Web/CSS/::file-selector-button */
 input[type="file"]::file-selector-button {
     font-family: "Merriweather", serif;
     border: 1px solid #ea8619;
-    background-color: #f5c048;
+    background-color: #f3c760;
     color: #ea8619;
 
     border-radius: 8px;
@@ -378,9 +388,9 @@ input[type="file"]::file-selector-button {
 input[type="file"]::file-selector-button:focus {
     cursor: pointer;
 
-    color: #f5c048;
+    color: #f3c760;
     background-color: #ea8619;
-    border: 1px solid #f5c048;
+    border: 1px solid #f3c760;
 }
 
 /*Checkbox*/
@@ -392,6 +402,7 @@ input[type="file"]::file-selector-button:focus {
     margin-bottom: 30px;
 
     width: 100%;
+
 }
 
 .cb-container {
@@ -405,14 +416,15 @@ input[type="file"]::file-selector-button:focus {
 }
 
 .cb-container input {
+    display:none;
     float: left;
     cursor: pointer;
 }
 
-input[type="checkbox"] {
+#checkboxes input[type="checkbox"] {
     appearance: none;
     margin: 0;
-    background-color: #f5c048;
+    background-color: #f3c760;
 
     border-radius: 5px;
     color: #ea8619;
@@ -426,7 +438,7 @@ input[type="checkbox"] {
     place-content: center;
 }
 
-input[type="checkbox"]::before {
+#checkboxes input[type="checkbox"]::before {
     content: "";
     width: 20px;
     height: 20px;
@@ -440,7 +452,7 @@ input[type="checkbox"]::before {
 
 }
 
-input[type=checkbox]:checked::before {
+#checkboxes input[type=checkbox]:checked::before {
     transform: scale(1);
 }
 
@@ -453,10 +465,11 @@ input[type=checkbox]:checked::before {
 }
 
 input[type="submit"] {
-    border-radius: 15px;
-    padding: 7px;
+    border-radius: 14px;
+    
+    height:50px;
 
-    width: 25%;
+    width: 30%;
 
     color: #ea8619;
     background-color: #3e531c;
@@ -510,7 +523,7 @@ footer h2 {
     margin-bottom: 20px;
 }
 
-footer p {
+footer a {
     text-decoration: none;
     color:#ea8619;
     margin-bottom: 5px;

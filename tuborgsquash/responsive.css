@@ -20,11 +20,10 @@
     input,
     label,
     textarea,
-    a {
+    a, ol {
         font-size: 20pt;
         font-weight: 300;
         letter-spacing: 0.3px;
-        margin-bottom: 20px;
     }
 
     #konkurrence div>a,
@@ -79,18 +78,19 @@
 
         transition: 0.3s;
 
-        animation: ned 1s ease-out 1;
+        animation: ned 1s ease-in-out 1;
 
     }
 
     @keyframes ned {
         0% {
-            bottom: 100;
+            bottom: 200px;
         }
 
         100% {
-            bottom: 250;
+            bottom: 190px;
         }
+
     }
 
     .fa-laptop:hover {
@@ -105,8 +105,10 @@
 
     /*KONKURRENCE REGLER STYLES LAPTOP*/
     #k-regler {
-        height: 1450px;
+        height: auto;
         bottom: 20px;
+        padding-bottom:100px;
+        padding-top:100px;
     }
 
     #k-pic-mobil {
@@ -124,6 +126,12 @@
 
     #k-regler div {
         margin-top: 4%;
+        margin-right:10%;
+        margin-left:10%;
+    }
+
+    #k-regler ol{
+        padding-bottom:3%;
     }
 
     #k-regler h2 {
@@ -131,6 +139,15 @@
         margin-bottom: 8%;
 
         text-align: center;
+    }
+
+    #k-regler div p{
+        margin-bottom:5%;
+    }
+
+    #k-regler a{
+        position:relative;
+        top:20px;
     }
 
     #k-regler a:hover {
@@ -270,7 +287,7 @@
 
     }
 
-    input[type="checkbox"]{
+    #checkboxes input[type="checkbox"]{
         height:40px;
         transform: translateY(0em);
         
@@ -315,6 +332,7 @@
     }
 
     input[type="submit"]{
+        height:65px;
         border-radius: 20px;
         cursor:pointer;
 
@@ -341,7 +359,7 @@
   
 
 }
-/*TABLET*/
+/*TABLET LODRET*/
 @media screen and (min-width:768px) and (max-width:1023px) {
     /*MAIN STYLES TABLET*/
     h2 {
@@ -362,11 +380,11 @@
     input,
     label,
     textarea,
-    a {
+    a, ol {
         font-size: 15pt;
         font-weight: 300;
         letter-spacing: 0.3px;
-        margin-bottom: 20px;
+        
     }
 
     #konkurrence div>a,
@@ -431,7 +449,27 @@
 
     /*KONKURRENCE REGLER STYLES TABLET*/
     #k-regler{
-        height:850px;
+        height:auto;
+        padding-bottom:100px;
+    }
+
+    #k-regler div{
+        margin-top:4%;
+        margin-right:8%;
+        margin-left:8%;
+    }
+
+    #k-regler div > div{
+        margin-bottom:3%;
+    }
+
+    #k-regler div p {
+        margin-bottom: 5%;
+    }
+
+    #k-regler div > a{
+        position:relative;
+        top:20px;
     }
 
     #k-pic-mobil {
@@ -509,15 +547,30 @@
     }
 
     .cb-container{
-        margin-top: 10px;
+
+        margin-top: 11px;
         font-size:15pt;
 
     }
 
-    input[type="checkbox"]{
+    #checkboxes input[type="checkbox"]{
         height:40px;
         transform: translateY(0em);
+
+        appearance: none;
+        margin: 0;
+        background-color: #f3c760;
+
+        display: grid;
+        place-content: center;
         
+        
+    }
+
+    input[type="submit"]{
+        height:60px;
+        width:25%;
+        border-radius: 17px;
     }
 
     input[type="submit"]:active {
