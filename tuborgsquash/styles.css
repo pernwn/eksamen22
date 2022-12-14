@@ -482,7 +482,7 @@ input[type="file"]::file-selector-button:focus {
 }
 
 input[type="submit"] {
-    border-radius: 15px;
+    border-radius: 20px;
     
     height:50px;
 
