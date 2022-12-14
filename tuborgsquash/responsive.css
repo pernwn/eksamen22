@@ -24,6 +24,7 @@
         font-size: 20pt;
         font-weight: 300;
         letter-spacing: 0.3px;
+        -webkit-tap-highlight-color: transparent;
     }
 
     #konkurrence div>a,
@@ -47,7 +48,6 @@
         transition: 0.4s ease-in-out;
     }
 
-
     /*KONKURRENCE STYLES LAPTOP*/
     #konkurrence {
         height: 600px;
@@ -57,7 +57,7 @@
         display: none;
     }
 
-    #top-pic-laptop {
+    #top-pic-laptop{
         display: block;
     }
 
@@ -298,11 +298,15 @@
         padding-right:20%;
         padding-left:20%;
         margin-top:5%;
-        margin-bottom:5%;
+        margin-bottom:30px;
     }
 
     #deltagtekst h2{
         margin-bottom:30px;
+    }
+
+    #deltagtekst p{
+        margin-bottom:20px;
     }
 
     .cb-container{
@@ -391,7 +395,6 @@
         font-size: 30pt;
         font-weight: 600;
         letter-spacing: 0.3px;
-        margin-bottom: 10px;
     }
 
     h3 {
@@ -409,13 +412,13 @@
         font-size: 15pt;
         font-weight: 300;
         letter-spacing: 0.3px;
+        -webkit-tap-highlight-color: transparent;
         
     }
 
     #konkurrence div>a,
     #k-regler a,
     #varianter a {
-
         border-radius: 20px;
         padding: 8px;
         padding-right: 30px;
@@ -489,7 +492,7 @@
     }
 
     #k-regler div{
-        margin-top:4%;
+        margin-top:2%;
         margin-right:8%;
         margin-left:8%;
     }

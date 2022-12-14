@@ -38,15 +38,20 @@ label,
 textarea,
 a, ol li {
     font-family: "Kanit", sans-serif;
+    -webkit-tap-highlight-color: transparent;
 }
+
 
 
 /*MOBIL TEKST STTYLES*/
 h2 {
-    font-size: 17pt;
+    font-size: 20pt;
     font-weight: 600;
     letter-spacing: 0.5px;
     margin-bottom: 10px;
+    padding-left:10px;
+    padding-right:10px;
+    text-align: center;
 }
 
 h3 {
@@ -133,6 +138,10 @@ footer {
     align-items: center;
 }
 
+#info h2{
+    margin-bottom:15px;
+}
+
 /*KONKURRENCE REGLER STYLES*/
 #k-regler {
     background-color: #ea8619;
@@ -148,7 +157,7 @@ footer {
     bottom: 10px;
 
     padding-bottom:50px;
-    padding-top:20px;
+
     
 }
 
@@ -176,7 +185,7 @@ footer {
 
 #k-regler div {
     text-align: center;
-    margin-top: 7%;
+    margin-top: 2%;
     margin-right:5%;
     margin-left:5%;
 }
@@ -217,7 +226,9 @@ footer {
 
     border-bottom: solid 2px #ea851948;
     border-radius: 10px;
-    margin-top: 40px;
+    margin-top: 20px;
+    margin-left:40px;
+    margin-right:40px;
 }
 
 #varianter div {
@@ -248,7 +259,7 @@ footer {
 }
 
 #varianter img {
-    border-radius: 60px;
+    border-radius: 100px;
 }
 
 .squash-laptop{
@@ -342,8 +353,8 @@ footer {
 }
 
 #deltagtekst {
-    margin-bottom: 8%;
-    margin-top: 10%;
+    margin-bottom: 5%;
+ 
 }
 
 #formular {
@@ -467,12 +478,11 @@ input[type="file"]::file-selector-button:focus {
 #checkboxes label {
     display: flex;
     float: left;
-
     text-align: left;
 }
 
 input[type="submit"] {
-    border-radius: 20px;
+    border-radius: 15px;
     
     height:50px;
 
