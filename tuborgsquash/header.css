@@ -118,6 +118,7 @@ label input:checked+#hamburger-menu #burger:before {
 
 
 label #navmobil {
+    visibility: hidden;
     z-index: 200;
     position: absolute;
     top: -200px;
@@ -128,6 +129,7 @@ label #navmobil {
 }
 
 label input:checked+#hamburger-menu~#navmobil {
+    visibility: visible;
     position: absolute;
     right: -9%;
     top: 350px;
