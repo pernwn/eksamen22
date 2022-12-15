@@ -54,6 +54,7 @@ header #navlaptop {
     height: 110px;
     background: #3e531c;
     border-radius: 50%;
+    -webkit-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
     box-shadow: 0 0 0 0 #3e531c, 0 0 0 0 #3e531c;
     cursor: pointer;
@@ -70,7 +71,9 @@ header #navlaptop {
     height: 4px;
     background: #ea8619;
     display: block;
+    -webkit-transform-origin: center;
     transform-origin: center;
+    -webkit-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
 
     border-radius: 10px;
@@ -78,6 +81,7 @@ header #navlaptop {
 
 #burger:after,
 #burger:before {
+    -webkit-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
     content: "";
     position: absolute;
@@ -103,15 +107,18 @@ label input:checked+#hamburger-menu {
 }
 
 label input:checked+#hamburger-menu #burger {
+    -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
 }
 
 label input:checked+#hamburger-menu #burger:after {
+    -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
     bottom: 0;
 }
 
 label input:checked+#hamburger-menu #burger:before {
+    -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
     top: 0;
 }
@@ -123,8 +130,10 @@ label #navmobil {
     position: absolute;
     top: -200px;
     right: -100%;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     opacity: 0;
+    -webkit-transition: 0.4s 0s ease-in-out;
     transition: 0.4s 0s ease-in-out;
 }
 
