@@ -309,7 +309,7 @@
     }
 
     .cb-container{
-        margin-top: 30px;
+        margin-top: 20px;
         font-size:17pt;
 
     }
@@ -336,7 +336,7 @@
         right:150px;
 
         position: relative;
-        bottom: 120px;
+        bottom: 155px;
 
         transition: 0.3s;
 
@@ -344,7 +344,7 @@
 
     .fa-laptop-up:hover {
         color: #4a681e;
-        bottom: 140px;
+        bottom: 170px;
     }
 
     .fa-laptop-up:active {
@@ -363,16 +363,15 @@
         height:65px;
         border-radius: 25px;
         cursor:pointer;
-        border:3px solid #ea8619;
+        border:3px solid #3e531c;
 
-        transition:0.3s ease-in-out;
+        transition:0.4s ease-in-out;
       
     }
 
     input[type="submit"]:hover{
         color:#3e531c;
         background-color: #ea8619;
-        border:3px solid #3e531c;
     }
 
     /*FOOTER STYLES LAPTOP*/
@@ -634,6 +633,7 @@
         height:60px;
         width:25%;
         border-radius: 20px;
+        border:3px solid #ea8619;
     }
 
     input[type="submit"]:active {
@@ -659,7 +659,7 @@
         right:80px;
 
         position: relative;
-        bottom: 110px;
+        bottom: 143px;
 
         transition: 0.3s;
 

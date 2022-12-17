@@ -41,6 +41,13 @@ header #navlaptop {
     margin-bottom: 12%;
 
     text-decoration: none;
+
+    transform: scale(1);
+    transition:0.3s ease-in-out;
+}
+
+#navmobil a:active{
+    transform:scale(1.2);
 }
 
 
@@ -212,6 +219,8 @@ header #navlaptop {
     top: 2px;
 
     padding: 8px;
+
+    transition:0.3s ease-in-out;
 }
 
 #navlaptop a:hover {

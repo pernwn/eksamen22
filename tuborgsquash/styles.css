@@ -114,10 +114,13 @@ footer {
     position: relative;
     bottom: 60px;
 
+    transform: scale(1);
+    transition:0.2s ease-in-out;
 }
 
 .fa-mobil:active {
     color: #334517;
+    transform: scale(1.2);
 }
 
 #konkurrence a {
@@ -207,12 +210,16 @@ footer {
     font-size: 10pt;
 
     cursor: pointer;
+
+    transform: scale(1);
+    transition:0.2s ease-in-out;
 }
 
 #konkurrence div>a:active,
 #k-regler a:active,
 #varianter a:active {
     background-color: #334517;
+    transform:scale(1.2);
 }
 
 /*VARIANTER STYLES*/
@@ -480,6 +487,7 @@ input[type="file"]::file-selector-button:focus {
 }
 
 input[type="submit"] {
+    margin-bottom:50px;
     border-radius: 20px;
     
     height:50px;
@@ -488,7 +496,7 @@ input[type="submit"] {
 
     color: #ea8619;
     background-color: #3e531c;
-
+    border:3px solid #ea8619;
     cursor: pointer;
 }
 
@@ -504,17 +512,21 @@ input[type="submit"]:active {
     color: #3e531c;
 
     position: relative;
-    bottom: 102px;
+    bottom: 138px;
 
     float: right;
 
     margin-right: 35px;
 
     cursor: pointer;
+
+    transform: scale(1);
+    transition:0.2s ease-in-out;
 }
 
 .fa-mobil-up:active {
     color: #334517;
+    transform: scale(1.2);
 }
 
 
