@@ -360,7 +360,7 @@
     }
 
     input[type="submit"]{
-        height:65px;
+        height:60px;
         border-radius: 25px;
         cursor:pointer;
         border:3px solid #3e531c;
