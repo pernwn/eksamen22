@@ -204,32 +204,38 @@ header #navlaptop {
 #navlaptop a {
     font-family: "Merriweather", serif;
     font-size: 15pt;
-    width: 15%;
+    width: 100%;
     text-align: center;
 
     font-weight: 300;
     text-decoration: none;
     color: #ea8619;
     background-color: #3e531c;
-
-    border: 2px solid #ea8619;
+    border:1px solid #ea8619;
     border-radius: 15px;
 
-    position: relative;
-    top: 2px;
+
 
     padding: 8px;
+    padding-left:20px;
+    padding-right:20px;
 
     transition:0.3s ease-in-out;
 }
 
+/*#navlaptop div{
+    background-color: red;
+    width:100%;
+}*/
+
 #navlaptop a:hover {
+    padding-left:20px;
+    padding-right:20px;
     background-color: #ea851928;
 }
 
 #navlaptop a:active {
-    background-color: #ea85192e;
-
+    background-color: #6f400d99;
 }
 
 #navlaptop a:nth-child(3) {
@@ -269,7 +275,7 @@ header #navlaptop {
     background-color: #97a547;
     border-radius: 15px;
 
-    width: 90%;
+    width: 100%;
 
     text-align: center;
     padding: 8%;
@@ -277,6 +283,7 @@ header #navlaptop {
 
     text-decoration: none;
 }
+
 #navmobil img {
     width: 100%;
     margin-bottom: 15%;
