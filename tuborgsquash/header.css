@@ -205,7 +205,7 @@ label input:checked~a img {
     #navlaptop a {
         font-family: "Merriweather", serif;
         font-size: 15pt;
-        width: 100%;
+        width: auto;
         text-align: center;
 
         font-weight: 300;
@@ -214,19 +214,14 @@ label input:checked~a img {
         background-color: #3e531c;
         border: 1px solid #ea8619;
         border-radius: 15px;
-
-
-
         padding: 8px;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 25px;
+        padding-right:25px;
 
         transition: 0.3s ease-in-out;
     }
 
     #navlaptop a:hover {
-        padding-left: 20px;
-        padding-right: 20px;
         background-color: #ea851928;
     }
 
