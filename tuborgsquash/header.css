@@ -8,8 +8,8 @@ header {
     height: 80px;
 }
 
-header label{
-    display:block;
+header label {
+    display: block;
 }
 
 header #navlaptop {
@@ -43,11 +43,11 @@ header #navlaptop {
     text-decoration: none;
 
     transform: scale(1);
-    transition:0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
-#navmobil a:active{
-    transform:scale(1.2);
+#navmobil a:active {
+    transform: scale(1.2);
 }
 
 
@@ -185,71 +185,68 @@ label input:checked~a img {
 }
 
 @media screen and (min-width:1024px) {
+
     /*HEADER LAPTOP STYLES*/
-header label {
-    display: none;
+    header label {
+        display: none;
+    }
+
+    header #navlaptop {
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+    #navlaptop a {
+        font-family: "Merriweather", serif;
+        font-size: 15pt;
+        width: 100%;
+        text-align: center;
+
+        font-weight: 300;
+        text-decoration: none;
+        color: #ea8619;
+        background-color: #3e531c;
+        border: 1px solid #ea8619;
+        border-radius: 15px;
+
+
+
+        padding: 8px;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        transition: 0.3s ease-in-out;
+    }
+
+    #navlaptop a:hover {
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: #ea851928;
+    }
+
+    #navlaptop a:active {
+        background-color: #6f400d99;
+    }
+
+    #navlaptop a:nth-child(3) {
+        border: none;
+        padding: 0;
+        margin: 0;
+        width: 15%;
+        border-radius: 50%;
+        background-color: #3e531c;
+    }
+
 }
 
-header #navlaptop {
+@media screen and (min-width:768px) and (max-width:1023px) {
 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-
-    margin-left: 200px;
-    margin-right: 200px;
-}
-
-#navlaptop a {
-    font-family: "Merriweather", serif;
-    font-size: 15pt;
-    width: 100%;
-    text-align: center;
-
-    font-weight: 300;
-    text-decoration: none;
-    color: #ea8619;
-    background-color: #3e531c;
-    border:1px solid #ea8619;
-    border-radius: 15px;
-
-
-
-    padding: 8px;
-    padding-left:20px;
-    padding-right:20px;
-
-    transition:0.3s ease-in-out;
-}
-
-/*#navlaptop div{
-    background-color: red;
-    width:100%;
-}*/
-
-#navlaptop a:hover {
-    padding-left:20px;
-    padding-right:20px;
-    background-color: #ea851928;
-}
-
-#navlaptop a:active {
-    background-color: #6f400d99;
-}
-
-#navlaptop a:nth-child(3) {
-    border: none;
-    padding: 0;
-    margin: 0;
-    width: 15%;
-    border-radius: 50%;
-    background-color: #3e531c;
-}
-    
-}
-
-@media screen and (min-width:768px) and (max-width:1023px){
     /*HEADER TABLET STYLES*/
     label #navmobil {
         z-index: 200;
@@ -265,27 +262,27 @@ header #navlaptop {
         position: absolute;
         right: 23%;
         top: 450px;
-    
+
         opacity: 1;
     }
 
 
-#navmobil a {
-    color: #3e531c;
-    background-color: #97a547;
-    border-radius: 15px;
+    #navmobil a {
+        color: #3e531c;
+        background-color: #97a547;
+        border-radius: 15px;
 
-    width: 100%;
+        width: 100%;
 
-    text-align: center;
-    padding: 8%;
-    margin-bottom: 15%;
+        text-align: center;
+        padding: 8%;
+        margin-bottom: 15%;
 
-    text-decoration: none;
-}
+        text-decoration: none;
+    }
 
-#navmobil img {
-    width: 100%;
-    margin-bottom: 15%;
-}
+    #navmobil img {
+        width: 100%;
+        margin-bottom: 15%;
+    }
 }

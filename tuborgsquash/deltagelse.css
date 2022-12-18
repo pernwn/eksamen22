@@ -1,18 +1,18 @@
-body{
+body {
     background-color: #ea8619;
 }
 
 
-#mobil{
-    color:#3e531c;
-    height:845px;
+#mobil {
+    color: #3e531c;
+    height: 845px;
 
 
     background-image: url(images/appelsinskiver4.png);
     background-repeat: no-repeat;
     background-size: cover;
 
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -20,199 +20,202 @@ body{
 }
 
 
-main p{
+main p {
     font-weight: 400;
 }
 
-@keyframes slide{
-    0%{
-        transform:translateY(0);
+@keyframes slide {
+    0% {
+        transform: translateY(0);
     }
-    100%{
-        transform:translateY(40px);
+
+    100% {
+        transform: translateY(40px);
     }
 }
 
-@keyframes slideobjects{
-    0%{
-        transform:translateY(0);
+@keyframes slideobjects {
+    0% {
+        transform: translateY(0);
     }
-    100%{
-        transform:translateY(60px);
+
+    100% {
+        transform: translateY(60px);
     }
 }
 
 
-#mobil > div:first-child{
+#mobil>div:first-child {
     background-color: #f5c048;
-    
-    opacity:0.6;
+
+    opacity: 0.6;
 
     border-radius: 20px;
-    padding:150px;
-    margin-left:40px;
-    margin-right:40px;
+    padding: 150px;
+    margin-left: 40px;
+    margin-right: 40px;
 
-    position:relative;
-    top:100px;
+    position: relative;
+    top: 100px;
 
-    animation:slide 1s ease-in-out 0s 1 forwards;
-    
+    animation: slide 1s ease-in-out 0s 1 forwards;
+
 
 }
 
-main #appelsin{
-    display:flex;
+main #appelsin {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
 
-    position:relative;
-    bottom:270px;
+    position: relative;
+    bottom: 270px;
 
-    animation:slideobjects 1s ease-in-out 0s 1 forwards;
+    animation: slideobjects 1s ease-in-out 0s 1 forwards;
 }
 
 
-main #laptop, #navlaptop{
-    display:none;
+main #laptop,
+#navlaptop {
+    display: none;
 }
 
-main #mobil, header label{
-    display:block;
+main #mobil,
+header label {
+    display: block;
 }
 
 /*LAPTOP*/
-@media screen and (min-width:1024px){
+@media screen and (min-width:1024px) {
 
-    main #mobil, header label{
-        display:none;
+    main #mobil,
+    header label {
+        display: none;
     }
 
-    main #laptop, #navlaptop{
-        display:block;
+    main #laptop,
+    #navlaptop {
+        display: block;
     }
 
-    main{
-        color:#3e531c;
-        
-        height:955px;
+    main {
+        color: #3e531c;
+
+        height: 955px;
 
         background-image: url(images/appelsinskiver6.png);
         background-repeat: no-repeat;
         background-size: cover;
     }
 
-    #laptop > div:first-child{
+    #laptop>div:first-child {
         background-color: #f5c048;
-    
-        opacity:0.6;
-    
+
+        opacity: 0.6;
+
         border-radius: 20px;
-        padding-bottom:300px;
-        padding-top:250px;
+        padding-bottom: 300px;
+        padding-top: 250px;
 
-        margin-left:360px;
-        margin-right:360px;
+        margin-left: 360px;
+        margin-right: 360px;
 
-        position:relative;
-        bottom:550px;
+        position: relative;
+        bottom: 550px;
 
-        animation:slide 1s ease-in-out 0s 1 forwards;
-        
+        animation: slide 1s ease-in-out 0s 1 forwards;
+
     }
 
-    #appelsin-laptop{
-        display:flex;
+    #appelsin-laptop {
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
 
-        width:100%;
-    
-        position:relative;
-        bottom:600px;
-    
-        animation:slideobjects 1s ease-in-out 0s 1 forwards;
+        width: 100%;
+
+        position: relative;
+        bottom: 600px;
+
+        animation: slideobjects 1s ease-in-out 0s 1 forwards;
     }
 
 
-    @keyframes slide{
-        0%{
-            transform:translateY(650px);
+    @keyframes slide {
+        0% {
+            transform: translateY(650px);
         }
-        100%{
-            transform:translateY(700px);
-        }
-    }
-    
-    @keyframes slideobjects{
-        0%{
-            transform:translateY(0);
-        }
-        100%{
-            transform:translateY(120px);
+
+        100% {
+            transform: translateY(700px);
         }
     }
 
-    #laptop p{
-        font-size:25pt;
-        font-weight:300;
+    @keyframes slideobjects {
+        0% {
+            transform: translateY(0);
+        }
+
+        100% {
+            transform: translateY(120px);
+        }
+    }
+
+    #laptop p {
+        font-size: 25pt;
+        font-weight: 300;
 
     }
 }
 
 /*TABLET*/
-@media screen and (min-width:768px) and (max-width:1023px){
-    main #laptop{
-        display:none;
+@media screen and (min-width:768px) and (max-width:1023px) {
+    main #laptop {
+        display: none;
     }
 
-    #mobil{
-        height:1100px;
+    #mobil {
+        height: 1100px;
     }
 
-    #mobil > div:first-child{
+    #mobil>div:first-child {
         background-color: #f5c048;
-        
-        opacity:0.6;
-    
+
+        opacity: 0.6;
+
         border-radius: 20px;
-        padding:200px;
-        margin-left:100px;
-        margin-right:100px;
-    
-        position:relative;
-        top:190px;
-    
-        animation:slide 1s ease-in-out 0s 1 forwards;
-        
+        padding: 200px;
+        margin-left: 100px;
+        margin-right: 100px;
+
+        position: relative;
+        top: 190px;
+
+        animation: slide 1s ease-in-out 0s 1 forwards;
+
     }
 
-    main #appelsin img{
-        display:flex;
+    main #appelsin img {
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
-    
-        position:relative;
-        bottom:60px;
 
-    
-        animation:slideobjects 1s ease-in-out 0s 1 forwards;
+        position: relative;
+        bottom: 60px;
+
+
+        animation: slideobjects 1s ease-in-out 0s 1 forwards;
     }
 
-    main p{
+    main p {
         font-size: 20pt;
         font-weight: 300;
     }
 
 }
-
-
-
-
-

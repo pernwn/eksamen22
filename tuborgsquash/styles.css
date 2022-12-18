@@ -18,7 +18,7 @@ html {
 body {
     background-color: #f3c760;
     overflow-x: hidden;
-    width:100%;
+    width: 100%;
 }
 
 main {
@@ -36,7 +36,8 @@ p,
 input,
 label,
 textarea,
-a, ol li {
+a,
+ol li {
     font-family: "Kanit", sans-serif;
     -webkit-tap-highlight-color: transparent;
 }
@@ -49,8 +50,8 @@ h2 {
     font-weight: 600;
     letter-spacing: 0.5px;
     margin-bottom: 10px;
-    padding-left:10px;
-    padding-right:10px;
+    padding-left: 10px;
+    padding-right: 10px;
     text-align: center;
 }
 
@@ -65,7 +66,8 @@ p,
 input,
 label,
 textarea,
-a, ol {
+a,
+ol {
     font-size: 12pt;
     font-weight: 400;
     letter-spacing: 0.3px;
@@ -91,17 +93,18 @@ footer {
     height: 160px;
 }
 
-#top-pic-laptop{
-    display:none;
+#top-pic-laptop {
+    display: none;
 }
 
-#top-pic-mobil, #top-pic-laptop{
+#top-pic-mobil,
+#top-pic-laptop {
     width: 100%;
     position: relative;
 }
 
-.fa-laptop{
-    display:none;
+.fa-laptop {
+    display: none;
 }
 
 .fa-mobil {
@@ -115,7 +118,7 @@ footer {
     bottom: 60px;
 
     transform: scale(1);
-    transition:0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 .fa-mobil:active {
@@ -129,10 +132,10 @@ footer {
 
 #info {
     position: relative;
-    height:auto;
+    height: auto;
 
-    padding-left:50px;
-    padding-right:50px;
+    padding-left: 50px;
+    padding-right: 50px;
     text-align: center;
 
     display: flex;
@@ -141,14 +144,14 @@ footer {
     align-items: center;
 }
 
-#info h2{
-    margin-bottom:15px;
+#info h2 {
+    margin-bottom: 15px;
 }
 
 /*KONKURRENCE REGLER STYLES*/
 #k-regler {
     background-color: #ea8619;
-    height:auto;
+    height: auto;
     width: 100%;
 
     display: flex;
@@ -159,22 +162,22 @@ footer {
     position: relative;
     bottom: 10px;
 
-    padding-bottom:50px;
+    padding-bottom: 50px;
 }
 
-#k-pic-mobil{
-    width:100%;
+#k-pic-mobil {
+    width: 100%;
 }
 
-#k-pic-laptop{
-    display:none;
+#k-pic-laptop {
+    display: none;
 }
 
 
 #k-regler a {
     color: #ea8619;
     text-decoration: none;
-  
+
 }
 
 #k-regler h2 {
@@ -187,8 +190,8 @@ footer {
 #k-regler div {
     text-align: center;
     margin-top: 2%;
-    margin-right:5%;
-    margin-left:5%;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
 #k-regler div p {
@@ -212,14 +215,14 @@ footer {
     cursor: pointer;
 
     transform: scale(1);
-    transition:0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 #konkurrence div>a:active,
 #k-regler a:active,
 #varianter a:active {
     background-color: #334517;
-    transform:scale(1.2);
+    transform: scale(1.2);
 }
 
 /*VARIANTER STYLES*/
@@ -232,8 +235,8 @@ footer {
     border-bottom: solid 2px #ea851948;
     border-radius: 10px;
     margin-top: 20px;
-    margin-left:40px;
-    margin-right:40px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 #varianter div {
@@ -267,8 +270,8 @@ footer {
     border-radius: 100px;
 }
 
-.squash-laptop{
-    display:none;
+.squash-laptop {
+    display: none;
 }
 
 #varianter a {
@@ -276,8 +279,8 @@ footer {
     text-decoration: none;
 }
 
-#varianter p{
-    text-align:center;
+#varianter p {
+    text-align: center;
 }
 
 #bølge {
@@ -295,8 +298,8 @@ footer {
     height: auto;
     width: 100%;
 
-    margin-top:12%;
-    margin-bottom:45%;
+    margin-top: 12%;
+    margin-bottom: 45%;
 
 }
 
@@ -310,14 +313,14 @@ footer {
     margin-right: 50px;
     margin-left: 50px;
     margin-top: 130%;
-    margin-bottom:10%;
-   
+    margin-bottom: 10%;
+
     position: absolute;
 
 }
 
-#image-holder-laptop{
-    display:none;
+#image-holder-laptop {
+    display: none;
 }
 
 #image-holder {
@@ -334,8 +337,8 @@ footer {
     padding-left: 110px;
     padding-right: 110px;
 
-    position:relative;
-    right:250px;
+    position: relative;
+    right: 250px;
 
 }
 
@@ -359,7 +362,7 @@ footer {
 
 #deltagtekst {
     margin-bottom: 5%;
- 
+
 }
 
 #formular {
@@ -375,22 +378,23 @@ textarea {
     width: 100%;
 
     border: solid 2px #ea8619;
-    border-radius:10px;
+    border-radius: 10px;
 
     color: #ea8619;
     background-color: #f3c760;
-    outline:none;
+    outline: none;
 
-    transition:0.4s;
+    transition: 0.4s;
 }
 
-::-webkit-input-placeholder{
-    color:#ea8619;
-    opacity:0.5;
+::-webkit-input-placeholder {
+    color: #ea8619;
+    opacity: 0.5;
 }
 
-#formular > input:focus, textarea:focus{
-    border:solid 2px #c06605;
+#formular>input:focus,
+textarea:focus {
+    border: solid 2px #c06605;
 }
 
 /*Input – navn, email, upload, besked – https://developer.mozilla.org/en-US/docs/Web/CSS/::file-selector-button */
@@ -439,7 +443,7 @@ input[type="file"]::file-selector-button:focus {
 }
 
 .cb-container input {
-    display:none;
+    display: none;
     float: left;
     cursor: pointer;
 }
@@ -487,16 +491,16 @@ input[type="file"]::file-selector-button:focus {
 }
 
 input[type="submit"] {
-    margin-bottom:50px;
+    margin-bottom: 50px;
     border-radius: 20px;
-    
-    height:45px;
+
+    height: 45px;
 
     width: 30%;
 
     color: #ea8619;
     background-color: #3e531c;
-    border:3px solid #ea8619;
+    border: 3px solid #ea8619;
     cursor: pointer;
 }
 
@@ -504,8 +508,8 @@ input[type="submit"]:active {
     background-color: #334517;
 }
 
-.fa-laptop-up{
-    display:none;
+.fa-laptop-up {
+    display: none;
 }
 
 .fa-mobil-up {
@@ -521,7 +525,7 @@ input[type="submit"]:active {
     cursor: pointer;
 
     transform: scale(1);
-    transition:0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 .fa-mobil-up:active {
@@ -551,6 +555,6 @@ footer h2 {
 
 footer a {
     text-decoration: none;
-    color:#ea8619;
+    color: #ea8619;
     margin-bottom: 5px;
 }

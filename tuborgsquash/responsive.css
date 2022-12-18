@@ -20,7 +20,8 @@
     input,
     label,
     textarea,
-    a, ol {
+    a,
+    ol {
         font-size: 20pt;
         font-weight: 300;
         letter-spacing: 0.3px;
@@ -57,7 +58,7 @@
         display: none;
     }
 
-    #top-pic-laptop{
+    #top-pic-laptop {
         display: block;
     }
 
@@ -82,18 +83,18 @@
 
     }
 
-    #info{
-        padding:10px;
-        padding-left:150px;
-        padding-right:150px;
+    #info {
+        padding: 10px;
+        padding-left: 150px;
+        padding-right: 150px;
     }
 
-    #info p{
-        margin-bottom:0;
+    #info p {
+        margin-bottom: 0;
     }
 
-    #info h2{
-        margin-bottom:30px;
+    #info h2 {
+        margin-bottom: 30px;
     }
 
     @keyframes ned {
@@ -121,7 +122,7 @@
     #k-regler {
         height: auto;
         bottom: 20px;
-        padding-top:150px;
+        padding-top: 150px;
     }
 
     #k-pic-mobil {
@@ -138,13 +139,13 @@
     }
 
     #k-regler div {
-        margin-top:2%;
-        margin-right:12%;
-        margin-left:12%;
+        margin-top: 2%;
+        margin-right: 12%;
+        margin-left: 12%;
     }
 
-    #k-regler ol{
-        padding-bottom:3%;
+    #k-regler ol {
+        padding-bottom: 3%;
     }
 
     #k-regler h2 {
@@ -154,13 +155,13 @@
         text-align: center;
     }
 
-    #k-regler div p{
-        margin-bottom:5%;
+    #k-regler div p {
+        margin-bottom: 5%;
     }
 
-    #k-regler a{
-        position:relative;
-        top:20px;
+    #k-regler a {
+        position: relative;
+        top: 20px;
     }
 
     #k-regler a:hover {
@@ -198,12 +199,12 @@
     #almsquash-tekst {
         order: 2;
         text-align: center;
-        margin-left:50px;
+        margin-left: 50px;
     }
 
     #lightsquash-tekst {
         text-align: center;
-        margin-right:50px;
+        margin-right: 50px;
     }
 
     #varianter img {
@@ -247,16 +248,16 @@
     #historien {
         height: auto;
         margin-top: 150px;
-        margin-bottom:-50px;
+        margin-bottom: -50px;
     }
 
-    #historietekst{
-        padding:17%;
-        margin-top:65%;
+    #historietekst {
+        padding: 17%;
+        margin-top: 65%;
     }
 
-    #historietekst h3{
-        margin-bottom:30px;
+    #historietekst h3 {
+        margin-bottom: 30px;
     }
 
     #image-holder {
@@ -286,54 +287,55 @@
     }
 
     /*DELTAG STYLES LAPTOP*/
-    #formular>input,textarea{
+    #formular>input,
+    textarea {
         font-size: 15pt;
-        padding:15px;
-        width:150%;
+        padding: 15px;
+        width: 150%;
         border-radius: 15px;
     }
 
-    #deltagtekst{
-        padding-right:20%;
-        padding-left:20%;
-        margin-top:5%;
-        margin-bottom:30px;
+    #deltagtekst {
+        padding-right: 20%;
+        padding-left: 20%;
+        margin-top: 5%;
+        margin-bottom: 30px;
     }
 
-    #deltagtekst h2{
-        margin-bottom:30px;
+    #deltagtekst h2 {
+        margin-bottom: 30px;
     }
 
-    #deltagtekst p{
-        margin-bottom:20px;
+    #deltagtekst p {
+        margin-bottom: 20px;
     }
 
-    .cb-container{
+    .cb-container {
         margin-top: 20px;
-        font-size:17pt;
+        font-size: 17pt;
 
     }
 
-    #checkboxes input[type="checkbox"]{
-        height:40px;
+    #checkboxes input[type="checkbox"] {
+        height: 40px;
         transform: translateY(0em);
         border-radius: 10px;
-        
+
     }
 
     .fa-mobil-up {
         display: none;
     }
 
-    .fa-laptop-up{
+    .fa-laptop-up {
         color: #3e531c;
 
         display: flex;
         align-items: center;
         justify-content: center;
 
-        float:right;
-        right:150px;
+        float: right;
+        right: 150px;
 
         position: relative;
         bottom: 155px;
@@ -351,44 +353,46 @@
         color: #334517;
     }
 
-    main a{
+    main a {
         text-decoration: none;
     }
 
-    #bølge-historie{
-        bottom:100px;
+    #bølge-historie {
+        bottom: 100px;
     }
 
-    input[type="submit"]{
-        height:60px;
+    input[type="submit"] {
+        height: 60px;
         border-radius: 25px;
-        cursor:pointer;
-        border:3px solid #3e531c;
+        cursor: pointer;
+        border: 3px solid #3e531c;
 
-        transition:0.4s ease-in-out;
-      
+        transition: 0.4s ease-in-out;
+
     }
 
-    input[type="submit"]:hover{
-        color:#3e531c;
+    input[type="submit"]:hover {
+        color: #3e531c;
         background-color: #ea8619;
     }
 
     /*FOOTER STYLES LAPTOP*/
-    footer{
-        height:300px;
-        margin-bottom:100px;
+    footer {
+        height: 300px;
+        margin-bottom: 100px;
     }
 
-    footer h2{
-        margin-bottom:40px;
+    footer h2 {
+        margin-bottom: 40px;
     }
-    
-  
+
+
 
 }
+
 /*TABLET LODRET*/
 @media screen and (min-width:768px) and (max-width:1023px) {
+
     /*MAIN STYLES TABLET*/
     h2 {
         font-size: 30pt;
@@ -407,12 +411,13 @@
     input,
     label,
     textarea,
-    a, ol {
+    a,
+    ol {
         font-size: 15pt;
         font-weight: 300;
         letter-spacing: 0.3px;
         -webkit-tap-highlight-color: transparent;
-        
+
     }
 
     #konkurrence div>a,
@@ -434,7 +439,7 @@
         border: 3px solid #3e531c;
         transition: 0.4s ease-in-out;
     }
-    
+
     /*KONKURRENCE STYLES TABLET*/
     #konkurrence {
         height: 300px;
@@ -470,43 +475,43 @@
         color: #334517;
     }
 
-    #info{
-        height:auto;
-        padding-left:150px;
-        padding-right:150px;
+    #info {
+        height: auto;
+        padding-left: 150px;
+        padding-right: 150px;
     }
 
-    #info p{
-        margin-bottom:15px;
+    #info p {
+        margin-bottom: 15px;
     }
 
-    #info h2{
-        margin-bottom:25px;
+    #info h2 {
+        margin-bottom: 25px;
     }
 
     /*KONKURRENCE REGLER STYLES TABLET*/
-    #k-regler{
-        height:auto;
-        padding-bottom:100px;
+    #k-regler {
+        height: auto;
+        padding-bottom: 100px;
     }
 
-    #k-regler div{
-        margin-top:2%;
-        margin-right:8%;
-        margin-left:8%;
+    #k-regler div {
+        margin-top: 2%;
+        margin-right: 8%;
+        margin-left: 8%;
     }
 
-    #k-regler div > div{
-        margin-bottom:3%;
+    #k-regler div>div {
+        margin-bottom: 3%;
     }
 
     #k-regler div p {
         margin-bottom: 5%;
     }
 
-    #k-regler div > a{
-        position:relative;
-        top:20px;
+    #k-regler div>a {
+        position: relative;
+        top: 20px;
     }
 
     #k-pic-mobil {
@@ -527,14 +532,14 @@
         display: none;
     }
 
-    #varianter{
-        margin-right:100px;
-        margin-left:100px;
+    #varianter {
+        margin-right: 100px;
+        margin-left: 100px;
     }
 
     #varianter>div:nth-child(2) {
         margin-top: 60px;
-        margin-bottom:90px;
+        margin-bottom: 90px;
     }
 
     #varianter>div:nth-child(3) {
@@ -551,14 +556,15 @@
         margin-bottom: 20px;
     }
 
-    #varianter img{
+    #varianter img {
         border-radius: 150px;
-        margin-bottom:10px;
+        margin-bottom: 10px;
     }
 
-    #almsquash-tekst, #lightsquash-tekst{
-        margin-left:60px;
-        margin-right:60px;
+    #almsquash-tekst,
+    #lightsquash-tekst {
+        margin-left: 60px;
+        margin-right: 60px;
     }
 
     /*HISTORIE STYLES TABLET*/
@@ -566,55 +572,56 @@
         display: none;
     }
 
-    #image-holder-laptop img{
+    #image-holder-laptop img {
         position: relative;
-        right:30px;
+        right: 30px;
     }
 
     #image-holder-laptop {
         display: block;
     }
 
-    #historien{
-        height:auto;
-        margin-bottom:50px;
-        margin-top:80px;
+    #historien {
+        height: auto;
+        margin-bottom: 50px;
+        margin-top: 80px;
     }
 
-    #historietekst{
-        padding-left:100px;
-        padding-right:100px;
-        margin-top:75%;
+    #historietekst {
+        padding-left: 100px;
+        padding-right: 100px;
+        margin-top: 75%;
     }
 
     /*DELTAG STYLES TABLET*/
-    #formular>input,textarea{
+    #formular>input,
+    textarea {
         font-size: 15pt;
-        padding:15px;
-        width:120%;
+        padding: 15px;
+        width: 120%;
         border-radius: 15px;
     }
 
-    #deltagtekst{
-        padding-right:10%;
-        padding-left:10%;
-        margin-top:5%;
-        margin-bottom:4%;
+    #deltagtekst {
+        padding-right: 10%;
+        padding-left: 10%;
+        margin-top: 5%;
+        margin-bottom: 4%;
     }
 
-    #deltagtekst h2{
-        margin-bottom:20px;
+    #deltagtekst h2 {
+        margin-bottom: 20px;
     }
 
-    .cb-container{
+    .cb-container {
 
         margin-top: 20px;
-        font-size:15pt;
+        font-size: 15pt;
 
     }
 
-    #checkboxes input[type="checkbox"]{
-        height:40px;
+    #checkboxes input[type="checkbox"] {
+        height: 40px;
         transform: translateY(-0.1em);
 
         border-radius: 10px;
@@ -625,38 +632,38 @@
 
         display: grid;
         place-content: center;
-        
-        
+
+
     }
 
-    input[type="submit"]{
-        height:60px;
-        width:25%;
+    input[type="submit"] {
+        height: 60px;
+        width: 25%;
         border-radius: 20px;
-        border:3px solid #ea8619;
+        border: 3px solid #ea8619;
     }
 
     input[type="submit"]:active {
         background-color: #334517;
     }
 
-    #bølge-historie{
-        bottom:100px;
+    #bølge-historie {
+        bottom: 100px;
     }
 
     .fa-mobil-up {
         display: none;
     }
 
-    .fa-laptop-up{
+    .fa-laptop-up {
         color: #3e531c;
 
         display: flex;
         align-items: center;
         justify-content: center;
 
-        float:right;
-        right:80px;
+        float: right;
+        right: 80px;
 
         position: relative;
         bottom: 143px;
@@ -670,13 +677,13 @@
     }
 
     /*FOOTER STYLES TABLET*/
-    footer{
-        height:150px;
-        margin-bottom:80px;
+    footer {
+        height: 150px;
+        margin-bottom: 80px;
     }
 
-    footer h2{
-        margin-bottom:40px;
+    footer h2 {
+        margin-bottom: 40px;
     }
 
 }
