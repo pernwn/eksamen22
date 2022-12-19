@@ -213,6 +213,7 @@ label input:checked~a img {
         color: #ea8619;
         background-color: #3e531c;
         border: 1px solid #ea8619;
+        
         border-radius: 15px;
         padding: 8px;
         padding-left: 25px;
